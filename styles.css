@@ -1,0 +1,12 @@
+/* Small overrides on top of Tailwind CDN */
+html { scroll-behavior: smooth; }
+body { font-feature-settings: "ss01", "cv11"; -webkit-font-smoothing: antialiased; }
+:target { scroll-margin-top: 5rem; }
+a { transition: color .15s ease, background-color .15s ease, border-color .15s ease; }
+.prose-legal h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2.25rem; margin-bottom: 0.75rem; color: #F8FAFC; }
+.prose-legal h3 { font-size: 1.125rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #E2E8F0; }
+.prose-legal p { margin-bottom: 1rem; line-height: 1.7; color: #CBD5E1; }
+.prose-legal ul { list-style: disc; margin-left: 1.5rem; margin-bottom: 1rem; color: #CBD5E1; }
+.prose-legal li { margin-bottom: 0.4rem; line-height: 1.6; }
+.prose-legal a { color: #60A5FA; text-decoration: underline; text-decoration-color: rgba(96,165,250,.4); }
+.prose-legal a:hover { text-decoration-color: rgba(96,165,250,1); }
