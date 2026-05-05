@@ -56,6 +56,6 @@ git push
 Things that may need updating later:
 
 - **`[FULL LEGAL NAME]`** in `terms.html`, `privacy.html`, `refund.html` — replace with the operator's full legal name when the business is set up.
-- **Email address** — `gus@ocaisolutions.com` is referenced throughout. Email forwarding from this address to `bargus02@gmail.com` should be configured in the Porkbun email-forwarding panel before launch.
+- **Email address** — `ocaisolution@gmail.com` is referenced throughout. Email forwarding from this address to `bargus02@gmail.com` should be configured in the Porkbun email-forwarding panel before launch.
 - **Stripe payment link** — once Stripe is approved, add the payment URL to the AI Website Rescue CTAs (currently they go to `contact.html?service=website-rescue`).
 - **Phone number** — none listed by design. If you add one, update `contact.html` and the legal pages.
