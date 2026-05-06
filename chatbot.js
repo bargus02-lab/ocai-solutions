@@ -84,12 +84,12 @@
     .ocai-cb-toggle {
       position: fixed; bottom: 20px; right: 20px; z-index: 9998;
       width: 56px; height: 56px; border-radius: 28px; border: none;
-      background: linear-gradient(135deg, #3B82F6 0%, #0EA5E9 100%);
-      color: white; cursor: pointer; box-shadow: 0 8px 24px rgba(59,130,246,.35);
+      background: linear-gradient(135deg, #F59E0B 0%, #F97316 100%);
+      color: white; cursor: pointer; box-shadow: 0 8px 24px rgba(245,158,11,.35);
       display: flex; align-items: center; justify-content: center;
       transition: transform .15s ease, box-shadow .15s ease;
     }
-    .ocai-cb-toggle:hover { transform: scale(1.05); box-shadow: 0 12px 32px rgba(59,130,246,.45); }
+    .ocai-cb-toggle:hover { transform: scale(1.05); box-shadow: 0 12px 32px rgba(245,158,11,.45); }
     .ocai-cb-toggle svg { width: 24px; height: 24px; }
     .ocai-cb-panel {
       position: fixed; bottom: 88px; right: 20px; z-index: 9999;
@@ -105,7 +105,7 @@
     @keyframes ocai-cb-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
     .ocai-cb-header {
       padding: 16px 18px; border-bottom: 1px solid #1F2937;
-      background: linear-gradient(135deg, rgba(59,130,246,.12), rgba(14,165,233,.06));
+      background: linear-gradient(135deg, rgba(245,158,11,.12), rgba(249,115,22,.06));
       display: flex; align-items: center; justify-content: space-between;
     }
     .ocai-cb-header h3 { margin: 0; font-size: 15px; font-weight: 700; letter-spacing: -.01em; }
@@ -132,21 +132,21 @@
       transition: all .12s ease; text-decoration: none; display: block;
     }
     .ocai-cb-option:hover {
-      border-color: #3B82F6; color: white; background: rgba(59,130,246,.08);
+      border-color: #F59E0B; color: white; background: rgba(245,158,11,.08);
     }
     .ocai-cb-option-primary {
-      background: linear-gradient(135deg, #3B82F6, #0EA5E9);
+      background: linear-gradient(135deg, #F59E0B, #F97316);
       border-color: transparent; color: white; font-weight: 600;
     }
     .ocai-cb-option-primary:hover {
-      background: linear-gradient(135deg, #2563EB, #0891B2);
+      background: linear-gradient(135deg, #D97706, #EA580C);
       color: white;
     }
     .ocai-cb-footer {
       padding: 10px 18px; border-top: 1px solid #1F2937;
       font-size: 11px; color: #94A3B8; text-align: center;
     }
-    .ocai-cb-footer a { color: #60A5FA; text-decoration: none; }
+    .ocai-cb-footer a { color: #FBBF24; text-decoration: none; }
     .ocai-cb-footer a:hover { text-decoration: underline; }
   `;
 

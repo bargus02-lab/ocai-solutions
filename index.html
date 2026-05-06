@@ -3,25 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OCAI Solutions — AI Systems for Orange County Small Business</title>
-<meta name="description" content="OCAI Solutions builds AI-powered websites, outreach engines, and automation systems for Orange County service businesses. Flagship: $197 AI Website Rescue audit, 24-hour turnaround.">
+<title>OCAI Solutions — AI systems that actually make small businesses money</title>
+<meta name="description" content="OCAI Solutions ships fixed-price AI work for Orange County small business. $197 Website Rescue, 24-hour turnaround, money-back guarantee. Operated by Gus out of Santa Ana, California.">
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OCAI Solutions">
-<meta property="og:title" content="OCAI Solutions — AI Systems for Orange County Small Business">
-<meta property="og:description" content="AI-powered websites, outreach, and workflow automation for OC small businesses. Flagship: $197 AI Website Rescue, 24-hour turnaround.">
+<meta property="og:title" content="OCAI Solutions — AI systems that actually make small businesses money">
+<meta property="og:description" content="$197 Website Rescue, 24-hour turnaround, money-back guarantee. Built for Orange County small business by an operator who ships.">
 <meta property="og:url" content="https://ocaisolutions.com/">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OCAI Solutions — AI Systems for Orange County Small Business">
-<meta name="twitter:description" content="AI-powered websites, outreach, and workflow automation for OC small businesses. Flagship: $197 AI Website Rescue, 24-hour turnaround.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='100' y2='100' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233B82F6'/%3E%3Cstop offset='1' stop-color='%230EA5E9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='50' r='25' fill='none' stroke='white' stroke-width='9'/%3E%3Ccircle cx='75' cy='25' r='7' fill='%23FBBF24'/%3E%3C/svg%3E">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = { theme: { extend: { colors: { ink:'#0A0F1C', panel:'#111827', line:'#1F2937', muted:'#94A3B8', accent:'#60A5FA', accent2:'#3B82F6', brand:'#3B82F6', brand2:'#0EA5E9', warm:'#FBBF24' }, fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } } };
-</script>
+<meta name="twitter:title" content="OCAI Solutions — AI systems that actually make small businesses money">
+<meta name="twitter:description" content="$197 Website Rescue, 24-hour turnaround, money-back guarantee. Built for Orange County small business by an operator who ships.">
+
+<link rel="icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -46,149 +45,245 @@
 }
 </script>
 </head>
-<body class="bg-ink text-slate-100 font-sans antialiased">
+<body>
 
-<header class="border-b border-line bg-ink/80 backdrop-blur sticky top-0 z-40">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-2.5 font-bold text-lg">
-      <svg class="w-9 h-9 shrink-0" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<!-- ============================================================
+     Header
+     ============================================================ -->
+<header class="site-header">
+  <div class="header-row">
+    <a href="/" class="lockup" aria-label="OCAI Solutions home">
+      <svg width="34" height="34" viewBox="0 0 36 36" aria-hidden="true" style="flex-shrink:0">
         <defs>
           <linearGradient id="ocai-h" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stop-color="#3B82F6"/>
-            <stop offset="100%" stop-color="#0EA5E9"/>
+            <stop offset="0%" stop-color="var(--brand-500)"/>
+            <stop offset="100%" stop-color="var(--brand-cyan)"/>
           </linearGradient>
         </defs>
         <rect width="36" height="36" rx="9" fill="url(#ocai-h)"/>
         <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
-        <circle cx="26.5" cy="9.5" r="2" fill="#FBBF24"/>
+        <circle cx="26.5" cy="9.5" r="2" fill="var(--brand-gold)"/>
       </svg>
-      <span class="tracking-tight">
-        <span class="font-extrabold">OCAI</span> <span class="font-semibold text-slate-300">Solutions</span>
-      </span>
+      <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm text-slate-300">
-      <a href="services.html" class="hover:text-white">Services</a>
-      <a href="about.html" class="hover:text-white">About</a>
-      <a href="contact.html" class="hover:text-white">Contact</a>
-      <a href="services.html#website-rescue" class="px-4 py-2 rounded-md bg-accent2 text-white font-semibold hover:bg-accent">Get Started</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="#cta" class="btn btn-gradient btn-sm nav-cta">Get Started <span class="arrow" aria-hidden="true">→</span></a>
     </nav>
-    <a href="contact.html" class="md:hidden px-3 py-2 rounded-md bg-accent2 text-white text-sm font-semibold">Contact</a>
   </div>
 </header>
 
-<section class="relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-b from-ink via-ink to-panel"></div>
-  <div class="absolute -top-40 -right-40 w-[40rem] h-[40rem] bg-accent2/20 rounded-full blur-3xl"></div>
-  <div class="absolute -bottom-40 -left-40 w-[30rem] h-[30rem] bg-accent/10 rounded-full blur-3xl"></div>
-  <div class="relative max-w-5xl mx-auto px-6 pt-24 pb-20 text-center">
-    <span class="inline-block px-3 py-1 rounded-full bg-accent2/15 text-accent text-xs font-semibold tracking-wider uppercase mb-6">
-      Orange County, California
-    </span>
-    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
-      AI systems that actually <br class="hidden sm:block">make small businesses money.
-    </h1>
-    <p class="mt-6 text-lg text-slate-300 max-w-2xl mx-auto">
-      Websites that convert. Outreach that books calls. Workflows that run themselves.
-      Built for Orange County service businesses by an operator who ships.
-    </p>
-    <div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="services.html#website-rescue" class="px-6 py-3 rounded-md bg-accent2 hover:bg-accent text-white font-semibold">
-        Start with a $197 Website Rescue
-      </a>
-      <a href="services.html" class="px-6 py-3 rounded-md border border-line hover:border-accent text-slate-200 font-semibold">
-        See all services
-      </a>
-    </div>
-    <p class="mt-6 text-sm text-muted">24-hour turnaround · Money back if it's not useful</p>
-  </div>
-</section>
+<!-- ============================================================
+     Hero (subtle variant)
+     ============================================================ -->
+<section class="hero variant-subtle">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="hero-grid"></div>
 
-<section class="py-20 border-t border-line">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-center mb-14">
-      <h2 class="text-3xl sm:text-4xl font-bold">What we build</h2>
-      <p class="mt-3 text-muted max-w-2xl mx-auto">Three services. One flagship product, two engagement-based offerings. All shipped by hand.</p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <a href="services.html#website-rescue" class="group rounded-xl border border-line bg-panel p-7 hover:border-accent transition">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="inline-block w-10 h-10 rounded-lg bg-accent2/20 text-accent flex items-center justify-center font-bold">1</span>
-          <span class="text-xs font-semibold text-accent tracking-wider uppercase">Flagship · $197</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2 group-hover:text-accent">AI Website Rescue</h3>
-        <p class="text-slate-300 text-sm leading-relaxed mb-5">
-          We audit your website with AI, then ship rewritten homepage and services copy, three SEO meta descriptions, and a top-five fixes punch list. Delivered as a Google Doc plus a 5-minute Loom walkthrough. 24-hour turnaround.
-        </p>
-        <span class="text-accent font-semibold text-sm">Learn more →</span>
-      </a>
-
-      <a href="services.html#outreach" class="group rounded-xl border border-line bg-panel p-7 hover:border-accent transition">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="inline-block w-10 h-10 rounded-lg bg-accent2/20 text-accent flex items-center justify-center font-bold">2</span>
-          <span class="text-xs font-semibold text-accent tracking-wider uppercase">Project</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2 group-hover:text-accent">AI Outreach Engine</h3>
-        <p class="text-slate-300 text-sm leading-relaxed mb-5">
-          Done-for-you cold outreach: scraped lead lists, AI-personalized emails referencing each prospect's actual website, and a tracking dashboard. Turns prospecting from a part-time job into a 10-minute morning routine.
-        </p>
-        <span class="text-accent font-semibold text-sm">Request a quote →</span>
-      </a>
-
-      <a href="services.html#automation" class="group rounded-xl border border-line bg-panel p-7 hover:border-accent transition">
-        <div class="flex items-center gap-3 mb-4">
-          <span class="inline-block w-10 h-10 rounded-lg bg-accent2/20 text-accent flex items-center justify-center font-bold">3</span>
-          <span class="text-xs font-semibold text-accent tracking-wider uppercase">Project</span>
-        </div>
-        <h3 class="text-xl font-bold mb-2 group-hover:text-accent">AI Workflow Automation</h3>
-        <p class="text-slate-300 text-sm leading-relaxed mb-5">
-          Custom AI agents and automation pipelines that handle repetitive work: lead enrichment, customer follow-ups, invoice processing, content generation. Built around your existing tools, not a SaaS lock-in.
-        </p>
-        <span class="text-accent font-semibold text-sm">Request a quote →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="py-20 border-t border-line bg-panel/50">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+  <div class="container">
+    <div class="hero-inner">
       <div>
-        <h2 class="text-3xl sm:text-4xl font-bold mb-5">Why most AI services fail small business</h2>
-        <p class="text-slate-300 leading-relaxed mb-4">
-          Most "AI consulting" sells you a pile of API keys, dashboards you'll never log into, and a six-month roadmap. We sell shipped work in 24 hours.
+        <div class="hero-eyebrow-row">
+          <span class="loc">Santa Ana, California · Est. 2025</span>
+        </div>
+
+        <h1 class="display hero-headline">
+          AI systems that actually<br class="hide-mobile"> <em>make small businesses money.</em>
+        </h1>
+
+        <p class="hero-sub">
+          Websites that convert. Outreach that books calls. Workflows that run themselves.
+          Built for Orange County service businesses by an operator who ships — not an agency that pitches.
         </p>
-        <p class="text-slate-300 leading-relaxed">
-          The Website Rescue is a flat $197. The bigger projects are quoted up front with a fixed scope and a delivery date. No retainers, no surprise invoices, no consulting theater.
+
+        <div class="hero-cta-row">
+          <a href="#cta" class="btn btn-gradient btn-lg">
+            Start a $197 Website Rescue <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="#services" class="btn btn-secondary btn-lg">See all services</a>
+        </div>
+
+        <div class="hero-microcopy">
+          <span class="check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            24-hour turnaround
+          </span>
+          <span class="sep">·</span>
+          <span class="check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            Money back if it's not useful
+          </span>
+          <span class="sep">·</span>
+          <span class="check">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            No retainer
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Services — flagship + pair (stacked)
+     ============================================================ -->
+<section class="section" id="services">
+  <div class="container">
+    <header class="section-masthead">
+      <div class="meta">
+        <span class="num">02</span>
+        <span class="label">What we build</span>
+        <span class="desc">The Rescue is productized at $197. The bigger projects are quoted up front with a fixed scope and date.</span>
+      </div>
+      <h2 class="section-title">Three services. <em style="font-style:normal;color:var(--brand-400)">One flagship product,</em> two engagement-based offerings.</h2>
+    </header>
+
+    <div class="services layout-stacked">
+
+      <article class="flagship">
+        <div class="flagship-left">
+          <div class="flagship-tags">
+            <span class="tag gold">★ Flagship</span>
+            <span class="tag">$197 · 24-hour turnaround</span>
+            <span class="tag outline">Money-back guarantee</span>
+          </div>
+
+          <h3 class="flagship-title">AI Website Rescue</h3>
+
+          <p class="flagship-body">
+            We audit your website with AI, then ship rewritten copy you can paste in today. No retainer.
+            No discovery call. No three-week timeline. One Stripe payment, one Doc, one Loom.
+          </p>
+
+          <ul class="flagship-deliverables">
+            <li>Rewritten homepage hero — headline, subhead, CTA</li>
+            <li>Rewritten services section — problem to solution</li>
+            <li>3 SEO meta description options ready to paste</li>
+            <li>Top-5 conversion fixes ranked by revenue impact</li>
+            <li>Delivered as a Google Doc you can copy-edit</li>
+            <li>5-minute Loom walkthrough explaining every change</li>
+          </ul>
+
+          <div class="flagship-cta-row">
+            <a href="#cta" class="btn btn-gradient">
+              Start a Website Rescue <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#how" class="btn btn-ghost">
+              See how it works <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="flagship-right">
+          <div>
+            <div class="flagship-price-label">Flat rate</div>
+            <div class="flagship-price"><span class="dollar">$</span>197</div>
+          </div>
+
+          <div class="flagship-meta">
+            <div class="row"><span class="key">Turnaround</span><span class="val">24 hours</span></div>
+            <div class="row"><span class="key">Format</span><span class="val">Doc + Loom</span></div>
+            <div class="row"><span class="key">Guarantee</span><span class="val">Full refund</span></div>
+            <div class="row"><span class="key">Discovery call</span><span class="val">None</span></div>
+            <div class="row"><span class="key">Retainer</span><span class="val">None</span></div>
+          </div>
+        </aside>
+      </article>
+
+      <div class="service-pair">
+
+        <a href="#cta" class="service-card">
+          <div class="head">
+            <span class="num-mark">02</span>
+            <span class="tag outline">Project</span>
+          </div>
+          <h3>AI Outreach Engine</h3>
+          <p class="body">Done-for-you cold outreach. Scraped lead lists, AI-personalized emails referencing each prospect's actual website, and a tracking dashboard. Turns prospecting from a part-time job into a 10-minute morning routine.</p>
+          <div class="footer-row">
+            <span class="price-line">Custom-quoted · typical $2k–$5k</span>
+            <span>Request a quote <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a href="#cta" class="service-card">
+          <div class="head">
+            <span class="num-mark">03</span>
+            <span class="tag outline">Project</span>
+          </div>
+          <h3>AI Workflow Automation</h3>
+          <p class="body">Custom AI agents and pipelines that handle repetitive work — lead enrichment, customer follow-ups, invoice processing, content generation. Built around your existing tools, not a SaaS lock-in.</p>
+          <div class="footer-row">
+            <span class="price-line">Custom-quoted · scope-dependent</span>
+            <span>Request a quote <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Trust
+     ============================================================ -->
+<section class="section section-soft" id="about">
+  <div class="container">
+    <header class="section-masthead">
+      <div class="meta">
+        <span class="num">03</span>
+        <span class="label">Why we exist</span>
+        <span class="desc">The model, not a pitch deck.</span>
+      </div>
+      <h2 class="section-title">Most "AI consulting" is consulting theater. <span style="color:var(--brand-400)">We sell shipped work.</span></h2>
+    </header>
+
+    <div class="trust-grid">
+      <div class="trust-blurb">
+        <p class="quote">
+          Most "AI consulting" sells you a pile of API keys, dashboards you'll never log into,
+          and a six-month roadmap. <em>We sell shipped work in 24 hours.</em>
+        </p>
+        <p class="body">
+          The Website Rescue is a flat $197. The bigger projects are quoted up front with a fixed
+          scope and a delivery date. No retainers, no surprise invoices, no discovery calls before
+          a $197 product.
+        </p>
+        <p class="body" style="color:var(--fg-mute);font-size:14.5px">
+          Operated by Gus out of Santa Ana, California. Sole proprietorship — no agency markup, no
+          account managers, no handoffs.
         </p>
       </div>
-      <ul class="space-y-4">
-        <li class="flex gap-4">
-          <span class="text-accent mt-0.5">✓</span>
+
+      <ul class="trust-list">
+        <li>
+          <span class="ix">01</span>
           <div>
-            <p class="font-semibold">Fixed prices, fixed timelines</p>
-            <p class="text-sm text-muted">You know what you're paying and when it lands before you say yes.</p>
+            <p class="t">Fixed prices, fixed timelines</p>
+            <p class="b">You know what you're paying and when it lands before you say yes.</p>
           </div>
         </li>
-        <li class="flex gap-4">
-          <span class="text-accent mt-0.5">✓</span>
+        <li>
+          <span class="ix">02</span>
           <div>
-            <p class="font-semibold">Shipped, not slide-decked</p>
-            <p class="text-sm text-muted">Every engagement ends with deliverables you can use, not just recommendations.</p>
+            <p class="t">Shipped, not slide-decked</p>
+            <p class="b">Every engagement ends with deliverables you can use, not a strategy deck.</p>
           </div>
         </li>
-        <li class="flex gap-4">
-          <span class="text-accent mt-0.5">✓</span>
+        <li>
+          <span class="ix">03</span>
           <div>
-            <p class="font-semibold">Money back if it's not useful</p>
-            <p class="text-sm text-muted">The Website Rescue carries a full refund guarantee. No hard feelings.</p>
+            <p class="t">Money back if it's not useful</p>
+            <p class="b">The Website Rescue carries a full refund guarantee. No hard feelings.</p>
           </div>
         </li>
-        <li class="flex gap-4">
-          <span class="text-accent mt-0.5">✓</span>
+        <li>
+          <span class="ix">04</span>
           <div>
-            <p class="font-semibold">Built locally, by an operator</p>
-            <p class="text-sm text-muted">Based in Orange County. Your project is shipped by the same person you emailed.</p>
+            <p class="t">Built locally, by an operator</p>
+            <p class="b">Based in Santa Ana. Your project is shipped by the same person who replies to your email.</p>
           </div>
         </li>
       </ul>
@@ -196,180 +291,261 @@
   </div>
 </section>
 
-<section class="py-20 border-t border-line">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-center">How a Website Rescue works</h2>
-    <ol class="space-y-8">
-      <li class="flex gap-5">
-        <span class="shrink-0 w-10 h-10 rounded-full bg-accent2 text-white font-bold flex items-center justify-center">1</span>
-        <div>
-          <h3 class="text-xl font-bold mb-1">You send your URL and pay $197</h3>
-          <p class="text-muted">One Stripe link. No call. No discovery process.</p>
-        </div>
+<!-- ============================================================
+     How it works
+     ============================================================ -->
+<section class="section" id="how">
+  <div class="container">
+    <header class="section-masthead">
+      <div class="meta">
+        <span class="num">04</span>
+        <span class="label">How a Rescue works</span>
+        <span class="desc">Same process for every Website Rescue, every time.</span>
+      </div>
+      <h2 class="section-title">Four steps. Roughly one business day, end to end.</h2>
+    </header>
+
+    <ol class="how-grid">
+      <li class="how-step">
+        <span class="num">01<span class="of"> / 04</span></span>
+        <h3 class="t">Send your URL &amp; pay $197</h3>
+        <p class="b">One Stripe link. No call, no discovery process, no scoping email chain.</p>
       </li>
-      <li class="flex gap-5">
-        <span class="shrink-0 w-10 h-10 rounded-full bg-accent2 text-white font-bold flex items-center justify-center">2</span>
-        <div>
-          <h3 class="text-xl font-bold mb-1">We audit and rewrite within 24 hours</h3>
-          <p class="text-muted">Homepage rewrite, services section rewrite, three SEO meta descriptions, top-five conversion fixes ranked by revenue impact.</p>
-        </div>
+      <li class="how-step">
+        <span class="num">02<span class="of"> / 04</span></span>
+        <h3 class="t">We audit and rewrite within 24 hours</h3>
+        <p class="b">Homepage, services section, three meta descriptions, ranked top-five conversion fixes.</p>
       </li>
-      <li class="flex gap-5">
-        <span class="shrink-0 w-10 h-10 rounded-full bg-accent2 text-white font-bold flex items-center justify-center">3</span>
-        <div>
-          <h3 class="text-xl font-bold mb-1">You get a Google Doc and a 5-minute Loom</h3>
-          <p class="text-muted">The Doc is yours to copy, edit, and ship. The Loom walks you through every change so you understand the why.</p>
-        </div>
+      <li class="how-step">
+        <span class="num">03<span class="of"> / 04</span></span>
+        <h3 class="t">Get a Google Doc + 5-min Loom</h3>
+        <p class="b">The Doc is yours to copy, edit, and ship. The Loom walks through every change so you know the why.</p>
       </li>
-      <li class="flex gap-5">
-        <span class="shrink-0 w-10 h-10 rounded-full bg-accent2 text-white font-bold flex items-center justify-center">4</span>
-        <div>
-          <h3 class="text-xl font-bold mb-1">If it's not useful, full refund</h3>
-          <p class="text-muted">Reply to the email and ask for your money back. No questions, no awkward calls.</p>
-        </div>
+      <li class="how-step">
+        <span class="num">04<span class="of"> / 04</span></span>
+        <h3 class="t">Not useful? Full refund</h3>
+        <p class="b">Reply to the email asking for your money back. We return $197 within 5 business days. No questions.</p>
       </li>
     </ol>
-    <div class="text-center mt-12">
-      <a href="services.html#website-rescue" class="inline-block px-7 py-3 rounded-md bg-accent2 hover:bg-accent text-white font-semibold">
-        Start a Website Rescue
-      </a>
+
+    <div class="how-cta">
+      <a href="#cta" class="btn btn-gradient btn-lg">Start a Website Rescue <span class="arrow" aria-hidden="true">→</span></a>
+      <a href="#faq" class="btn btn-ghost">Read the FAQs first <span class="arrow" aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
 
-<section id="faq" class="py-20 border-t border-line">
-  <div class="max-w-3xl mx-auto px-6">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-3 text-center">Common questions</h2>
-    <p class="text-muted text-center mb-12">Everything most people ask before they buy.</p>
-    <div class="space-y-3">
-
-      <details class="group rounded-xl border border-line bg-panel hover:border-accent/50 transition open:border-accent2/50">
-        <summary class="px-5 py-4 font-semibold cursor-pointer flex justify-between items-center text-slate-200 group-open:text-white">
-          <span>What if I don't have a website yet?</span>
-          <span class="text-accent text-xl transition group-open:rotate-180 ml-4 shrink-0">⌄</span>
-        </summary>
-        <div class="px-5 pb-5 -mt-1 text-slate-300 leading-relaxed">
-          The Website Rescue is built for businesses with an existing site that's underperforming. If you don't have a site yet, the AI Workflow Automation engagement can include site setup as part of a larger project — email us with your situation.
-        </div>
-      </details>
-
-      <details class="group rounded-xl border border-line bg-panel hover:border-accent/50 transition open:border-accent2/50">
-        <summary class="px-5 py-4 font-semibold cursor-pointer flex justify-between items-center text-slate-200 group-open:text-white">
-          <span>Do you serve businesses outside Orange County?</span>
-          <span class="text-accent text-xl transition group-open:rotate-180 ml-4 shrink-0">⌄</span>
-        </summary>
-        <div class="px-5 pb-5 -mt-1 text-slate-300 leading-relaxed">
-          Yes. The work is fully remote — we've worked with businesses across the U.S. The "Orange County" framing is about where we're based, not who we serve. If you have a website and a problem, we can help.
-        </div>
-      </details>
-
-      <details class="group rounded-xl border border-line bg-panel hover:border-accent/50 transition open:border-accent2/50">
-        <summary class="px-5 py-4 font-semibold cursor-pointer flex justify-between items-center text-slate-200 group-open:text-white">
-          <span>How is this different from a marketing agency?</span>
-          <span class="text-accent text-xl transition group-open:rotate-180 ml-4 shrink-0">⌄</span>
-        </summary>
-        <div class="px-5 pb-5 -mt-1 text-slate-300 leading-relaxed">
-          Three things: fixed prices (no scope creep), 24-hour turnaround on the flagship product (no three-week timelines), and you get shipped deliverables (rewritten copy, working systems) — not a strategy deck. We don't sell retainers, monthly meetings, or "discovery phases."
-        </div>
-      </details>
-
-      <details class="group rounded-xl border border-line bg-panel hover:border-accent/50 transition open:border-accent2/50">
-        <summary class="px-5 py-4 font-semibold cursor-pointer flex justify-between items-center text-slate-200 group-open:text-white">
-          <span>What if I'm not happy with the audit?</span>
-          <span class="text-accent text-xl transition group-open:rotate-180 ml-4 shrink-0">⌄</span>
-        </summary>
-        <div class="px-5 pb-5 -mt-1 text-slate-300 leading-relaxed">
-          Reply to the delivery email and ask for a refund. We send the full $197 back to your card within 5 business days, no questions asked. You keep the audit. <a href="refund.html" class="text-accent hover:underline">Read the full policy</a>.
-        </div>
-      </details>
-
-      <details class="group rounded-xl border border-line bg-panel hover:border-accent/50 transition open:border-accent2/50">
-        <summary class="px-5 py-4 font-semibold cursor-pointer flex justify-between items-center text-slate-200 group-open:text-white">
-          <span>Can I see what an audit actually looks like?</span>
-          <span class="text-accent text-xl transition group-open:rotate-180 ml-4 shrink-0">⌄</span>
-        </summary>
-        <div class="px-5 pb-5 -mt-1 text-slate-300 leading-relaxed">
-          Yes — <a href="sample-audit.html" class="text-accent hover:underline">view an anonymized sample audit</a>. Same depth and format you'd receive within 24 hours of paying.
-        </div>
-      </details>
-
-      <details class="group rounded-xl border border-line bg-panel hover:border-accent/50 transition open:border-accent2/50">
-        <summary class="px-5 py-4 font-semibold cursor-pointer flex justify-between items-center text-slate-200 group-open:text-white">
-          <span>How do I actually start?</span>
-          <span class="text-accent text-xl transition group-open:rotate-180 ml-4 shrink-0">⌄</span>
-        </summary>
-        <div class="px-5 pb-5 -mt-1 text-slate-300 leading-relaxed">
-          Email <a href="mailto:ocaisolution@gmail.com?subject=AI%20Website%20Rescue%20-%20%24197" class="text-accent hover:underline">ocaisolution@gmail.com</a> with the URL you'd like rescued. We send a Stripe payment link, you pay, and the audit lands in your inbox within 24 hours.
-        </div>
-      </details>
-
-    </div>
-  </div>
-</section>
-
-<section class="py-20 border-t border-line bg-panel/50">
-  <div class="max-w-3xl mx-auto px-6 text-center">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-5">Ready when you are</h2>
-    <p class="text-muted mb-8">Reply to the cold email, or start cold:</p>
-    <div class="flex flex-col sm:flex-row gap-3 justify-center">
-      <a href="contact.html" class="px-6 py-3 rounded-md bg-accent2 hover:bg-accent text-white font-semibold">Get in touch</a>
-      <a href="services.html" class="px-6 py-3 rounded-md border border-line hover:border-accent text-slate-200 font-semibold">See all services</a>
-    </div>
-  </div>
-</section>
-
-<footer class="border-t border-line py-12">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
-    <div>
-      <div class="flex items-center gap-2.5 font-bold mb-3">
-        <svg class="w-7 h-7 shrink-0" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="ocai-f" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#3B82F6"/>
-              <stop offset="100%" stop-color="#0EA5E9"/>
-            </linearGradient>
-          </defs>
-          <rect width="36" height="36" rx="9" fill="url(#ocai-f)"/>
-          <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
-          <circle cx="26.5" cy="9.5" r="2" fill="#FBBF24"/>
-        </svg>
-        <span class="tracking-tight">
-          <span class="font-extrabold">OCAI</span> <span class="font-semibold">Solutions</span>
-        </span>
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section section-soft" id="faq">
+  <div class="container">
+    <header class="section-masthead">
+      <div class="meta">
+        <span class="num">05</span>
+        <span class="label">Common questions</span>
+        <span class="desc">If yours isn't here, the chatbot probably has it. If not, just email.</span>
       </div>
-      <p class="text-muted">AI systems for Orange County small business.</p>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-3">Services</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="services.html#website-rescue" class="hover:text-white">Website Rescue</a></li>
-        <li><a href="services.html#outreach" class="hover:text-white">AI Outreach Engine</a></li>
-        <li><a href="services.html#automation" class="hover:text-white">Workflow Automation</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-3">Company</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="about.html" class="hover:text-white">About</a></li>
-        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-3">Legal</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="terms.html" class="hover:text-white">Terms of Service</a></li>
-        <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
-        <li><a href="refund.html" class="hover:text-white">Refund Policy</a></li>
-      </ul>
+      <h2 class="section-title">Everything most people ask <em style="font-style:normal;color:var(--brand-400)">before they buy.</em></h2>
+    </header>
+
+    <div class="faq-list">
+
+      <details class="faq-item" open>
+        <summary class="faq-summary">
+          <span class="ix">01</span>
+          <span class="q">What if I don't have a website yet?</span>
+          <span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">
+          <span class="ix-pad" aria-hidden="true"></span>
+          <div class="a">The Website Rescue is built for businesses with an existing site that's underperforming. If you don't have a site yet, the AI Workflow Automation engagement can include site setup as part of a larger project — <a href="mailto:ocaisolution@gmail.com">email us</a> with your situation.</div>
+          <span class="pad-end" aria-hidden="true"></span>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span class="ix">02</span>
+          <span class="q">Do you serve businesses outside Orange County?</span>
+          <span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">
+          <span class="ix-pad" aria-hidden="true"></span>
+          <div class="a">Yes. The work is fully remote — we've worked with businesses across the U.S. The "Orange County" framing is about where we're based, not who we serve. If you have a website and a problem, we can help.</div>
+          <span class="pad-end" aria-hidden="true"></span>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span class="ix">03</span>
+          <span class="q">How is this different from a marketing agency?</span>
+          <span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">
+          <span class="ix-pad" aria-hidden="true"></span>
+          <div class="a">Three things. Fixed prices, so no scope creep. 24-hour turnaround on the flagship product, so no three-week timelines. And shipped deliverables — rewritten copy you can paste in today — not a strategy deck. We don't sell retainers, monthly meetings, or "discovery phases."</div>
+          <span class="pad-end" aria-hidden="true"></span>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span class="ix">04</span>
+          <span class="q">What if I'm not happy with the audit?</span>
+          <span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">
+          <span class="ix-pad" aria-hidden="true"></span>
+          <div class="a">Reply to the delivery email and ask for a refund. We send the full $197 back to your card within 5 business days, no questions asked. You keep the audit. <a href="refund.html">Read the full refund policy</a>.</div>
+          <span class="pad-end" aria-hidden="true"></span>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span class="ix">05</span>
+          <span class="q">Can I see what an audit actually looks like?</span>
+          <span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">
+          <span class="ix-pad" aria-hidden="true"></span>
+          <div class="a">Yes — <a href="sample-audit.html">view an anonymized sample audit</a>. Same depth and format you'd receive within 24 hours of paying.</div>
+          <span class="pad-end" aria-hidden="true"></span>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-summary">
+          <span class="ix">06</span>
+          <span class="q">How do I actually start?</span>
+          <span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+        </summary>
+        <div class="faq-body">
+          <span class="ix-pad" aria-hidden="true"></span>
+          <div class="a">Email <a href="mailto:ocaisolution@gmail.com?subject=AI%20Website%20Rescue%20-%20%24197">ocaisolution@gmail.com</a> with the URL you'd like rescued. We send a Stripe payment link, you pay, and the audit lands in your inbox within 24 hours.</div>
+          <span class="pad-end" aria-hidden="true"></span>
+        </div>
+      </details>
+
     </div>
   </div>
-  <div class="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-line text-xs text-muted flex flex-col sm:flex-row justify-between gap-2">
-    <p>© <span id="year"></span> OCAI Solutions · Orange County, California</p>
-    <p>Operated as a sole proprietorship.</p>
+</section>
+
+<!-- ============================================================
+     Final CTA
+     ============================================================ -->
+<section class="section final-cta" id="cta">
+  <div class="container">
+    <div class="final-cta-grid">
+      <div>
+        <span class="num-anchor">06 — Get started</span>
+        <h2 class="section-title" style="margin-top:24px;max-width:16ch">
+          Reply to the cold email, <em style="font-style:normal;color:var(--brand-400)">or start cold.</em>
+        </h2>
+        <p class="lead" style="margin-top:24px">
+          One email, one Stripe link, one Doc in your inbox tomorrow morning. No call required.
+        </p>
+        <div class="cta-row" style="margin-top:32px">
+          <a href="mailto:ocaisolution@gmail.com?subject=AI%20Website%20Rescue%20-%20%24197" class="btn btn-gradient btn-lg">
+            Email ocaisolution@gmail.com <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">Use the contact form</a>
+        </div>
+        <p class="muted small" style="margin-top:20px">
+          We reply within one business day. Usually faster.
+        </p>
+      </div>
+
+      <aside class="final-cta-card" aria-label="Website Rescue summary">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <span class="num-anchor" style="color:var(--brand-400)">Flagship product</span>
+          <span class="tag gold">★</span>
+        </div>
+        <h3 class="h-card" style="margin-top:4px">AI Website Rescue</h3>
+        <div class="price-row"><span class="dollar">$</span>197</div>
+        <div class="row"><span>Turnaround</span><span class="val">24 hours</span></div>
+        <div class="row"><span>Format</span><span class="val">Doc + Loom</span></div>
+        <div class="row"><span>Guarantee</span><span class="val">Full refund</span></div>
+        <a href="mailto:ocaisolution@gmail.com?subject=AI%20Website%20Rescue%20-%20%24197" class="btn btn-gradient" style="margin-top:8px;justify-content:center">
+          Start now <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </aside>
+    </div>
   </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</section>
+
+<!-- ============================================================
+     Footer
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="lockup">
+          <svg width="30" height="30" viewBox="0 0 36 36" aria-hidden="true">
+            <defs>
+              <linearGradient id="ocai-f" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="var(--brand-500)"/>
+                <stop offset="100%" stop-color="var(--brand-cyan)"/>
+              </linearGradient>
+            </defs>
+            <rect width="36" height="36" rx="9" fill="url(#ocai-f)"/>
+            <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
+            <circle cx="26.5" cy="9.5" r="2" fill="var(--brand-gold)"/>
+          </svg>
+          <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
+        </a>
+        <p>AI systems for Orange County small business. Operated by Gus, sole proprietorship, Santa Ana CA.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#website-rescue">Website Rescue</a></li>
+          <li><a href="services.html#outreach">AI Outreach Engine</a></li>
+          <li><a href="services.html#automation">Workflow Automation</a></li>
+          <li><a href="sample-audit.html">Sample audit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> OCAI Solutions · Santa Ana, California</p>
+      <p>ocaisolution@gmail.com · Sole proprietorship</p>
+    </div>
+  </div>
 </footer>
 
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // FAQ: enforce one-open-at-a-time accordion behavior
+  document.querySelectorAll('.faq-item').forEach(d => {
+    d.addEventListener('toggle', () => {
+      if (d.open) {
+        document.querySelectorAll('.faq-item').forEach(other => {
+          if (other !== d) other.removeAttribute('open');
+        });
+      }
+    });
+  });
+</script>
 <script src="chatbot.js"></script>
 </body>
 </html>

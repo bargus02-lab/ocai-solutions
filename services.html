@@ -4,248 +4,264 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Services — OCAI Solutions</title>
-<meta name="description" content="Three AI services for Orange County small businesses: $197 AI Website Rescue, AI Outreach Engine, and AI Workflow Automation.">
+<meta name="description" content="Three AI services for Orange County small businesses: $197 AI Website Rescue (flagship), AI Outreach Engine, and AI Workflow Automation.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OCAI Solutions">
 <meta property="og:title" content="Services — OCAI Solutions">
-<meta property="og:description" content="Three AI services: $197 Website Rescue (flagship), Outreach Engine, and Workflow Automation. Built for Orange County small business.">
+<meta property="og:description" content="Three AI services for Orange County small businesses: $197 AI Website Rescue (flagship), AI Outreach Engine, and AI Workflow Automation.">
 <meta property="og:url" content="https://ocaisolutions.com/services.html">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Services — OCAI Solutions">
-<meta name="twitter:description" content="Three AI services: $197 Website Rescue (flagship), Outreach Engine, and Workflow Automation. Built for Orange County small business.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='100' y2='100' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233B82F6'/%3E%3Cstop offset='1' stop-color='%230EA5E9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='50' r='25' fill='none' stroke='white' stroke-width='9'/%3E%3Ccircle cx='75' cy='25' r='7' fill='%23FBBF24'/%3E%3C/svg%3E">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = { theme: { extend: { colors: { ink:'#0A0F1C', panel:'#111827', line:'#1F2937', muted:'#94A3B8', accent:'#60A5FA', accent2:'#3B82F6', brand:'#3B82F6', brand2:'#0EA5E9', warm:'#FBBF24' }, fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } } };
-</script>
+<meta name="twitter:description" content="Three AI services for Orange County small businesses: $197 AI Website Rescue (flagship), AI Outreach Engine, and AI Workflow Automation.">
+<link rel="icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-ink text-slate-100 font-sans antialiased">
-
-<header class="border-b border-line bg-ink/80 backdrop-blur sticky top-0 z-40">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-2.5 font-bold text-lg">
-      <svg class="w-9 h-9 shrink-0" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<body>
+<header class="site-header">
+  <div class="header-row">
+    <a href="index.html" class="lockup" aria-label="OCAI Solutions home">
+      <svg width="34" height="34" viewBox="0 0 36 36" aria-hidden="true" style="flex-shrink:0">
         <defs>
           <linearGradient id="ocai-h" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stop-color="#3B82F6"/>
-            <stop offset="100%" stop-color="#0EA5E9"/>
+            <stop offset="0%" stop-color="var(--brand-500)"/>
+            <stop offset="100%" stop-color="var(--brand-cyan)"/>
           </linearGradient>
         </defs>
         <rect width="36" height="36" rx="9" fill="url(#ocai-h)"/>
         <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
-        <circle cx="26.5" cy="9.5" r="2" fill="#FBBF24"/>
+        <circle cx="26.5" cy="9.5" r="2" fill="var(--brand-gold)"/>
       </svg>
-      <span class="tracking-tight">
-        <span class="font-extrabold">OCAI</span> <span class="font-semibold text-slate-300">Solutions</span>
-      </span>
+      <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm text-slate-300">
-      <a href="services.html" class="text-white">Services</a>
-      <a href="about.html" class="hover:text-white">About</a>
-      <a href="contact.html" class="hover:text-white">Contact</a>
-      <a href="#website-rescue" class="px-4 py-2 rounded-md bg-accent2 text-white font-semibold hover:bg-accent">Get Started</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-gradient btn-sm nav-cta">Get Started <span class="arrow" aria-hidden="true">→</span></a>
     </nav>
-    <a href="contact.html" class="md:hidden px-3 py-2 rounded-md bg-accent2 text-white text-sm font-semibold">Contact</a>
   </div>
 </header>
 
-<section class="py-16 border-b border-line">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h1 class="text-4xl sm:text-5xl font-extrabold mb-5">Services</h1>
-    <p class="text-lg text-slate-300 max-w-2xl mx-auto">
-      One flagship product with fixed pricing, two engagement-based offerings.
-      All shipped by the same operator who picks up your email.
-    </p>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow-line">01 · Services</span>
+    <h1>Three services. One flagship product, two engagement-based offerings.</h1>
+    <p class="lead">All shipped by the same operator who picks up your email. Fixed prices, fixed timelines.</p>
   </div>
 </section>
 
-<section id="website-rescue" class="py-20 border-b border-line">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="flex flex-wrap items-baseline gap-3 mb-4">
-      <span class="text-xs font-semibold text-accent tracking-wider uppercase">01 · Flagship</span>
-      <span class="text-xs font-semibold text-slate-300 px-2 py-0.5 rounded bg-accent2/20">$197 flat</span>
-      <span class="text-xs font-semibold text-slate-300 px-2 py-0.5 rounded bg-line">24-hour turnaround</span>
-      <span class="text-xs font-semibold text-slate-300 px-2 py-0.5 rounded bg-line">Money-back guarantee</span>
-    </div>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-5">AI Website Rescue</h2>
-    <p class="text-slate-300 leading-relaxed mb-6 max-w-3xl">
-      A focused audit and rewrite of your website's most important pages, delivered as a Google Doc and a 5-minute Loom walkthrough. Built for local service businesses (HVAC, plumbing, dentists, contractors, agencies, real estate, accounting, med spas, law firms) whose sites are losing them calls.
-    </p>
-
-    <div class="grid md:grid-cols-2 gap-6 mb-8">
-      <div class="rounded-xl border border-line bg-panel p-6">
-        <h3 class="font-bold mb-3">What you get</h3>
-        <ul class="space-y-2 text-slate-300 text-sm">
-          <li class="flex gap-2"><span class="text-accent">→</span> Rewritten homepage hero (headline, subheadline, primary CTA)</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> Rewritten services section (problem → solution → proof, per service)</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> Three SEO meta description options under 155 characters</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> Top-five conversion fixes ranked by revenue impact</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> A 5-minute Loom walkthrough explaining every change</li>
-        </ul>
+<section class="section" id="website-rescue">
+  <div class="container">
+    <header class="section-masthead">
+      <div class="meta">
+        <span class="num">01</span>
+        <span class="label">Flagship · $197</span>
+        <span class="desc">24-hour turnaround. Money back if it isn't useful.</span>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-6">
-        <h3 class="font-bold mb-3">How it works</h3>
-        <ol class="space-y-2 text-slate-300 text-sm">
-          <li><span class="text-accent font-semibold">1.</span> You send us your URL and pay $197 via Stripe.</li>
-          <li><span class="text-accent font-semibold">2.</span> We audit your homepage and inner pages with AI.</li>
-          <li><span class="text-accent font-semibold">3.</span> Within 24 hours you receive the Doc and the Loom.</li>
-          <li><span class="text-accent font-semibold">4.</span> You copy the rewrites into your site (or hand them to your developer).</li>
-          <li><span class="text-accent font-semibold">5.</span> If it isn't useful, we refund every dollar.</li>
+      <h2 class="section-title">AI Website Rescue</h2>
+    </header>
+
+    <article class="flagship">
+      <div class="flagship-left">
+        <div class="flagship-tags">
+          <span class="tag gold">★ Flagship</span>
+          <span class="tag">$197 · 24-hour turnaround</span>
+          <span class="tag outline">Money-back guarantee</span>
+        </div>
+
+        <p class="flagship-body" style="font-size:1.0625rem">
+          A focused audit and rewrite of your website's most important pages, delivered as a Google Doc and a 5-minute Loom walkthrough. Built for local service businesses (HVAC, plumbing, dentists, contractors, agencies, real estate, accounting, med spas, law firms) whose sites are losing them calls.
+        </p>
+
+        <h3 style="font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand-400);margin:8px 0 0">What you get</h3>
+        <ul class="flagship-deliverables">
+          <li>Rewritten homepage hero — headline, subhead, CTA</li>
+          <li>Rewritten services section — problem to solution</li>
+          <li>3 SEO meta description options ready to paste</li>
+          <li>Top-5 conversion fixes ranked by revenue impact</li>
+          <li>Delivered as a Google Doc you can copy-edit</li>
+          <li>5-minute Loom walkthrough explaining every change</li>
+        </ul>
+
+        <h3 style="font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand-400);margin:16px 0 0">How it works</h3>
+        <ol style="display:flex;flex-direction:column;gap:8px;color:var(--fg-3);font-size:14.5px;line-height:1.55;list-style:decimal;margin-left:1.25rem">
+          <li>You send us your URL and pay $197 via Stripe.</li>
+          <li>We audit your homepage and inner pages with AI.</li>
+          <li>Within 24 hours you receive the Doc and the Loom.</li>
+          <li>You copy the rewrites into your site (or hand them to your developer).</li>
+          <li>If it isn't useful, we refund every dollar.</li>
         </ol>
+
+        <div class="flagship-cta-row" style="margin-top:8px">
+          <a href="contact.html?service=website-rescue" class="btn btn-gradient">
+            Start your $197 Website Rescue <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="sample-audit.html" class="btn btn-ghost">
+            See a sample audit <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
-    </div>
 
-    <div class="rounded-xl border border-accent2 bg-accent2/10 p-6 mb-6">
-      <h3 class="font-bold mb-2">Best for</h3>
-      <p class="text-slate-200 text-sm leading-relaxed">
-        Service businesses with a real website that's underperforming — buried phone numbers, vague headlines, missing trust signals, weak CTAs. Not a fit for stores selling physical products, sites still in development, or pure marketing-agency referrals.
-      </p>
-    </div>
-
-    <a href="contact.html?service=website-rescue" class="inline-block px-7 py-3 rounded-md bg-accent2 hover:bg-accent text-white font-semibold">
-      Start your $197 Website Rescue
-    </a>
+      <aside class="flagship-right">
+        <div>
+          <div class="flagship-price-label">Flat rate</div>
+          <div class="flagship-price"><span class="dollar">$</span>197</div>
+        </div>
+        <div class="flagship-meta">
+          <div class="row"><span class="key">Turnaround</span><span class="val">24 hours</span></div>
+          <div class="row"><span class="key">Format</span><span class="val">Doc + Loom</span></div>
+          <div class="row"><span class="key">Guarantee</span><span class="val">Full refund</span></div>
+          <div class="row"><span class="key">Discovery call</span><span class="val">None</span></div>
+          <div class="row"><span class="key">Retainer</span><span class="val">None</span></div>
+        </div>
+      </aside>
+    </article>
   </div>
 </section>
 
-<section id="outreach" class="py-20 border-b border-line bg-panel/40">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="flex flex-wrap items-baseline gap-3 mb-4">
-      <span class="text-xs font-semibold text-accent tracking-wider uppercase">02 · Project</span>
-      <span class="text-xs font-semibold text-slate-300 px-2 py-0.5 rounded bg-line">Custom quote</span>
-    </div>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-5">AI Outreach Engine</h2>
-    <p class="text-slate-300 leading-relaxed mb-6 max-w-3xl">
-      A complete cold-outreach pipeline that turns prospecting from a part-time job into a 10-minute morning routine. Pulls leads from public sources, finds contact emails, drafts personalized messages that reference each prospect's actual website, and tracks every send-to-close.
-    </p>
+<section class="section section-soft" id="outreach">
+  <div class="container">
+    <header class="section-masthead">
+      <div class="meta">
+        <span class="num">02</span>
+        <span class="label">Project</span>
+        <span class="desc">Custom-quoted. Typical scope $2k–$5k.</span>
+      </div>
+      <h2 class="section-title">AI Outreach Engine</h2>
+    </header>
 
-    <div class="grid md:grid-cols-2 gap-6 mb-8">
-      <div class="rounded-xl border border-line bg-ink p-6">
-        <h3 class="font-bold mb-3">What's included</h3>
-        <ul class="space-y-2 text-slate-300 text-sm">
-          <li class="flex gap-2"><span class="text-accent">→</span> Lead-list generation across cities and categories</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> Email enrichment (homepage scrape + optional Hunter.io)</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> AI-personalized email drafts referencing each prospect's site</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> CSV-based tracking for sent / opened / replied / closed</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> 30-day setup support and tuning</li>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:880px">
+      <div>
+        <p class="body" style="margin-bottom:24px">A complete cold-outreach pipeline that turns prospecting from a part-time job into a 10-minute morning routine. Pulls leads from public sources, finds contact emails, drafts personalized messages that reference each prospect's actual website, and tracks every send-to-close.</p>
+        <h3 style="font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand-400);margin:0 0 12px">What's included</h3>
+        <ul class="flagship-deliverables" style="grid-template-columns:1fr;gap:8px">
+          <li>Lead-list generation across cities and categories</li>
+          <li>Email enrichment (homepage scrape + Hunter.io)</li>
+          <li>AI-personalized email drafts referencing each site</li>
+          <li>CSV-based tracking for sent / opened / replied / closed</li>
+          <li>30-day setup support and tuning</li>
         </ul>
       </div>
-      <div class="rounded-xl border border-line bg-ink p-6">
-        <h3 class="font-bold mb-3">Built for</h3>
-        <ul class="space-y-2 text-slate-300 text-sm">
-          <li class="flex gap-2"><span class="text-accent">→</span> Solo consultants and operators selling B2B services</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> Local-services businesses doing manual lead generation</li>
-          <li class="flex gap-2"><span class="text-accent">→</span> Anyone tired of spamming generic templates</li>
+      <div>
+        <h3 style="font-size:14px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand-400);margin:0 0 12px">Built for</h3>
+        <ul class="flagship-deliverables" style="grid-template-columns:1fr;gap:8px">
+          <li>Solo consultants and operators selling B2B services</li>
+          <li>Local-services businesses doing manual lead generation</li>
+          <li>Anyone tired of spamming generic templates</li>
         </ul>
       </div>
     </div>
-
-    <a href="contact.html?service=outreach" class="inline-block px-7 py-3 rounded-md bg-accent2 hover:bg-accent text-white font-semibold">
-      Request an Outreach Engine quote
-    </a>
+    <div style="margin-top:32px"><a href="contact.html?service=outreach" class="btn btn-gradient">Request an Outreach Engine quote <span class="arrow" aria-hidden="true">→</span></a></div>
   </div>
 </section>
 
-<section id="automation" class="py-20 border-b border-line">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="flex flex-wrap items-baseline gap-3 mb-4">
-      <span class="text-xs font-semibold text-accent tracking-wider uppercase">03 · Project</span>
-      <span class="text-xs font-semibold text-slate-300 px-2 py-0.5 rounded bg-line">Custom quote</span>
-    </div>
-    <h2 class="text-3xl sm:text-4xl font-bold mb-5">AI Workflow Automation</h2>
-    <p class="text-slate-300 leading-relaxed mb-6 max-w-3xl">
-      Custom AI agents and automation pipelines that handle the repetitive work that's eating your week. Built around the tools you already use — Gmail, Google Sheets, your CRM, your scheduler — not a new SaaS to learn.
-    </p>
+<section class="section" id="automation">
+  <div class="container">
+    <header class="section-masthead">
+      <div class="meta">
+        <span class="num">03</span>
+        <span class="label">Project</span>
+        <span class="desc">Custom-quoted, scope-dependent.</span>
+      </div>
+      <h2 class="section-title">AI Workflow Automation</h2>
+    </header>
 
-    <div class="grid md:grid-cols-3 gap-5 mb-8">
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <h3 class="font-bold mb-2 text-sm">Lead handling</h3>
-        <p class="text-slate-300 text-sm leading-relaxed">Auto-qualify inbound leads, enrich them with public data, route to the right next step.</p>
+    <p class="lead" style="margin-bottom:32px">Custom AI agents and automation pipelines that handle the repetitive work that's eating your week. Built around the tools you already use — Gmail, Google Sheets, your CRM, your scheduler — not a new SaaS to learn.</p>
+
+    <div class="service-pair" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark">·</span></div>
+        <h3>Lead handling</h3>
+        <p class="body">Auto-qualify inbound leads, enrich them with public data, route to the right next step.</p>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <h3 class="font-bold mb-2 text-sm">Customer follow-ups</h3>
-        <p class="text-slate-300 text-sm leading-relaxed">Personalized reminder sequences that adapt to each customer's history and behavior.</p>
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark">·</span></div>
+        <h3>Customer follow-ups</h3>
+        <p class="body">Personalized reminder sequences that adapt to each customer's history and behavior.</p>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <h3 class="font-bold mb-2 text-sm">Document workflows</h3>
-        <p class="text-slate-300 text-sm leading-relaxed">Invoice extraction, contract review, proposal generation — anything that involves rote document handling.</p>
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark">·</span></div>
+        <h3>Document workflows</h3>
+        <p class="body">Invoice extraction, contract review, proposal generation — anything involving rote document handling.</p>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <h3 class="font-bold mb-2 text-sm">Content pipelines</h3>
-        <p class="text-slate-300 text-sm leading-relaxed">Repeatable systems for blog posts, social content, customer case studies — drafted, scheduled, published.</p>
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark">·</span></div>
+        <h3>Content pipelines</h3>
+        <p class="body">Repeatable systems for blog posts, social content, customer case studies — drafted, scheduled, published.</p>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <h3 class="font-bold mb-2 text-sm">Internal Q&amp;A</h3>
-        <p class="text-slate-300 text-sm leading-relaxed">A private AI assistant trained on your SOPs, policies, and product docs.</p>
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark">·</span></div>
+        <h3>Internal Q&amp;A</h3>
+        <p class="body">A private AI assistant trained on your SOPs, policies, and product docs.</p>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <h3 class="font-bold mb-2 text-sm">Custom builds</h3>
-        <p class="text-slate-300 text-sm leading-relaxed">If it's repetitive and rule-based, it's probably automatable. Tell us what you're doing twice a week.</p>
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark">·</span></div>
+        <h3>Custom builds</h3>
+        <p class="body">If it's repetitive and rule-based, it's probably automatable. Tell us what you're doing twice a week.</p>
       </div>
     </div>
-
-    <a href="contact.html?service=automation" class="inline-block px-7 py-3 rounded-md bg-accent2 hover:bg-accent text-white font-semibold">
-      Request an Automation quote
-    </a>
+    <div style="margin-top:32px"><a href="contact.html?service=automation" class="btn btn-gradient">Request an Automation quote <span class="arrow" aria-hidden="true">→</span></a></div>
   </div>
 </section>
 
-<footer class="border-t border-line py-12">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
-    <div>
-      <div class="flex items-center gap-2.5 font-bold mb-3">
-        <svg class="w-7 h-7 shrink-0" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="ocai-f" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#3B82F6"/>
-              <stop offset="100%" stop-color="#0EA5E9"/>
-            </linearGradient>
-          </defs>
-          <rect width="36" height="36" rx="9" fill="url(#ocai-f)"/>
-          <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
-          <circle cx="26.5" cy="9.5" r="2" fill="#FBBF24"/>
-        </svg>
-        <span class="tracking-tight">
-          <span class="font-extrabold">OCAI</span> <span class="font-semibold">Solutions</span>
-        </span>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="lockup">
+          <svg width="30" height="30" viewBox="0 0 36 36" aria-hidden="true">
+            <defs>
+              <linearGradient id="ocai-f" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="var(--brand-500)"/>
+                <stop offset="100%" stop-color="var(--brand-cyan)"/>
+              </linearGradient>
+            </defs>
+            <rect width="36" height="36" rx="9" fill="url(#ocai-f)"/>
+            <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
+            <circle cx="26.5" cy="9.5" r="2" fill="var(--brand-gold)"/>
+          </svg>
+          <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
+        </a>
+        <p>AI systems for Orange County small business. Operated by Gus, sole proprietorship, Santa Ana CA.</p>
       </div>
-      <p class="text-muted">AI systems for Orange County small business.</p>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#website-rescue">Website Rescue</a></li>
+          <li><a href="services.html#outreach">AI Outreach Engine</a></li>
+          <li><a href="services.html#automation">Workflow Automation</a></li>
+          <li><a href="sample-audit.html">Sample audit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#how">How it works</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h4 class="font-semibold mb-3">Services</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="services.html#website-rescue" class="hover:text-white">Website Rescue</a></li>
-        <li><a href="services.html#outreach" class="hover:text-white">AI Outreach Engine</a></li>
-        <li><a href="services.html#automation" class="hover:text-white">Workflow Automation</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-3">Company</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="about.html" class="hover:text-white">About</a></li>
-        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-3">Legal</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="terms.html" class="hover:text-white">Terms of Service</a></li>
-        <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
-        <li><a href="refund.html" class="hover:text-white">Refund Policy</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> OCAI Solutions · Santa Ana, California</p>
+      <p>ocaisolution@gmail.com · Sole proprietorship</p>
     </div>
   </div>
-  <div class="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-line text-xs text-muted flex flex-col sm:flex-row justify-between gap-2">
-    <p>© <span id="year"></span> OCAI Solutions · Orange County, California</p>
-    <p>Operated as a sole proprietorship.</p>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
 
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="chatbot.js"></script>
 </body>
 </html>

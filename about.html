@@ -4,159 +4,151 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About — OCAI Solutions</title>
-<meta name="description" content="OCAI Solutions is an Orange County, California AI consultancy operated by Gus, a solo operator who builds and ships AI systems for local small businesses.">
+<meta name="description" content="OCAI Solutions is run by Gus, a solo Orange County operator using AI to ship the work most small businesses can't get to.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OCAI Solutions">
 <meta property="og:title" content="About — OCAI Solutions">
-<meta property="og:description" content="Solo Orange County operator using AI to ship the work most small businesses can't get to. Fixed prices, fixed timelines.">
+<meta property="og:description" content="OCAI Solutions is run by Gus, a solo Orange County operator using AI to ship the work most small businesses can't get to.">
 <meta property="og:url" content="https://ocaisolutions.com/about.html">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="About — OCAI Solutions">
-<meta name="twitter:description" content="Solo Orange County operator using AI to ship the work most small businesses can't get to. Fixed prices, fixed timelines.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='100' y2='100' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233B82F6'/%3E%3Cstop offset='1' stop-color='%230EA5E9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ccircle cx='50' cy='50' r='25' fill='none' stroke='white' stroke-width='9'/%3E%3Ccircle cx='75' cy='25' r='7' fill='%23FBBF24'/%3E%3C/svg%3E">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = { theme: { extend: { colors: { ink:'#0A0F1C', panel:'#111827', line:'#1F2937', muted:'#94A3B8', accent:'#60A5FA', accent2:'#3B82F6', brand:'#3B82F6', brand2:'#0EA5E9', warm:'#FBBF24' }, fontFamily: { sans: ['Inter','system-ui','sans-serif'] } } } };
-</script>
+<meta name="twitter:description" content="OCAI Solutions is run by Gus, a solo Orange County operator using AI to ship the work most small businesses can't get to.">
+<link rel="icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-ink text-slate-100 font-sans antialiased">
-
-<header class="border-b border-line bg-ink/80 backdrop-blur sticky top-0 z-40">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-2.5 font-bold text-lg">
-      <svg class="w-9 h-9 shrink-0" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<body>
+<header class="site-header">
+  <div class="header-row">
+    <a href="index.html" class="lockup" aria-label="OCAI Solutions home">
+      <svg width="34" height="34" viewBox="0 0 36 36" aria-hidden="true" style="flex-shrink:0">
         <defs>
           <linearGradient id="ocai-h" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-            <stop offset="0%" stop-color="#3B82F6"/>
-            <stop offset="100%" stop-color="#0EA5E9"/>
+            <stop offset="0%" stop-color="var(--brand-500)"/>
+            <stop offset="100%" stop-color="var(--brand-cyan)"/>
           </linearGradient>
         </defs>
         <rect width="36" height="36" rx="9" fill="url(#ocai-h)"/>
         <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
-        <circle cx="26.5" cy="9.5" r="2" fill="#FBBF24"/>
+        <circle cx="26.5" cy="9.5" r="2" fill="var(--brand-gold)"/>
       </svg>
-      <span class="tracking-tight">
-        <span class="font-extrabold">OCAI</span> <span class="font-semibold text-slate-300">Solutions</span>
-      </span>
+      <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm text-slate-300">
-      <a href="services.html" class="hover:text-white">Services</a>
-      <a href="about.html" class="text-white">About</a>
-      <a href="contact.html" class="hover:text-white">Contact</a>
-      <a href="services.html#website-rescue" class="px-4 py-2 rounded-md bg-accent2 text-white font-semibold hover:bg-accent">Get Started</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-gradient btn-sm nav-cta">Get Started <span class="arrow" aria-hidden="true">→</span></a>
     </nav>
-    <a href="contact.html" class="md:hidden px-3 py-2 rounded-md bg-accent2 text-white text-sm font-semibold">Contact</a>
   </div>
 </header>
 
-<section class="py-20 border-b border-line">
-  <div class="max-w-3xl mx-auto px-6">
-    <h1 class="text-4xl sm:text-5xl font-extrabold mb-6">About OCAI Solutions</h1>
-    <p class="text-xl text-slate-300 leading-relaxed mb-10">
-      A solo Orange County operator using AI to ship the work most small businesses can't get to.
-    </p>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow-line">About OCAI Solutions</span>
+    <h1>A solo Orange County operator using AI to ship the work most small businesses can't get to.</h1>
+  </div>
+</section>
 
-    <div class="space-y-6 text-slate-300 leading-relaxed">
-      <p>
-        OCAI Solutions is run by Gus, a solo operator based in Santa Ana, California. The company was founded on a simple idea: most local service businesses know their website is bad — but the path from "we should fix this" to "it's actually fixed" is too long, too expensive, or too slow. By the time the agency calls back, the busy season is over.
-      </p>
-      <p>
-        Modern AI changes the math. A homepage that used to take an agency three weeks of strategy decks and discovery calls can be rewritten by hand in a few hours, sharpened by AI, and shipped tomorrow. The same shift applies to lead generation, follow-ups, and the slow-burn busywork that eats every operator's week.
-      </p>
-      <p>
-        OCAI Solutions exists to package that shift into things small businesses can actually buy. The Website Rescue is a flat $197. The bigger projects are quoted up front. Every engagement ends with deliverables you can use, not slides describing them.
-      </p>
+<section class="section">
+  <div class="container">
+    <div class="prose" style="max-width:64ch">
+      <p>OCAI Solutions is run by Gus, a solo operator based in Santa Ana, California. The company was founded on a simple idea: most local service businesses know their website is bad — but the path from "we should fix this" to "it's actually fixed" is too long, too expensive, or too slow. By the time the agency calls back, the busy season is over.</p>
+
+      <p>Modern AI changes the math. A homepage that used to take an agency three weeks of strategy decks and discovery calls can be rewritten by hand in a few hours, sharpened by AI, and shipped tomorrow. The same shift applies to lead generation, follow-ups, and the slow-burn busywork that eats every operator's week.</p>
+
+      <p>OCAI Solutions exists to package that shift into things small businesses can actually buy. The Website Rescue is a flat $197. The bigger projects are quoted up front. Every engagement ends with deliverables you can use, not slides describing them.</p>
     </div>
 
-    <div class="mt-14 grid sm:grid-cols-3 gap-5">
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <p class="text-3xl font-extrabold text-accent">24h</p>
-        <p class="text-sm text-muted mt-1">Standard Website Rescue turnaround</p>
+    <div class="trust-grid" style="margin-top:64px;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark" style="font-size:24px;width:auto;background:transparent;color:var(--brand-400)">24h</span></div>
+        <h3 style="font-size:16px">Standard Website Rescue turnaround</h3>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <p class="text-3xl font-extrabold text-accent">100%</p>
-        <p class="text-sm text-muted mt-1">Refund guarantee on the flagship product</p>
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark" style="font-size:18px;width:auto;background:transparent;color:var(--brand-400)">100%</span></div>
+        <h3 style="font-size:16px">Refund guarantee on the flagship product</h3>
       </div>
-      <div class="rounded-xl border border-line bg-panel p-5">
-        <p class="text-3xl font-extrabold text-accent">1</p>
-        <p class="text-sm text-muted mt-1">Operator on every engagement, start to finish</p>
+      <div class="service-card" style="cursor:default">
+        <div class="head"><span class="num-mark" style="font-size:24px;width:auto;background:transparent;color:var(--brand-400)">1</span></div>
+        <h3 style="font-size:16px">Operator on every engagement, start to finish</h3>
       </div>
     </div>
 
-    <div class="mt-14 rounded-xl border border-line bg-panel p-7">
-      <h2 class="text-2xl font-bold mb-3">What we don't do</h2>
-      <ul class="space-y-2 text-slate-300">
-        <li class="flex gap-2"><span class="text-accent">·</span> No retainers, no minimum commitments.</li>
-        <li class="flex gap-2"><span class="text-accent">·</span> No discovery calls or sales pitches before a $197 product.</li>
-        <li class="flex gap-2"><span class="text-accent">·</span> No selling AI dashboards as deliverables.</li>
-        <li class="flex gap-2"><span class="text-accent">·</span> No building things you didn't ask for.</li>
-      </ul>
-    </div>
-
-    <div class="mt-12 text-center">
-      <a href="contact.html" class="inline-block px-7 py-3 rounded-md bg-accent2 hover:bg-accent text-white font-semibold">
-        Get in touch
-      </a>
+    <div class="flagship" style="margin-top:64px;grid-template-columns:1fr">
+      <div class="flagship-left">
+        <h3 class="flagship-title" style="font-size:1.875rem">What we don't do</h3>
+        <ul class="flagship-deliverables" style="grid-template-columns:1fr 1fr">
+          <li>No retainers, no minimum commitments.</li>
+          <li>No discovery calls or sales pitches before a $197 product.</li>
+          <li>No selling AI dashboards as deliverables.</li>
+          <li>No building things you didn't ask for.</li>
+        </ul>
+        <div class="flagship-cta-row">
+          <a href="contact.html" class="btn btn-gradient">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<footer class="border-t border-line py-12">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
-    <div>
-      <div class="flex items-center gap-2.5 font-bold mb-3">
-        <svg class="w-7 h-7 shrink-0" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="ocai-f" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#3B82F6"/>
-              <stop offset="100%" stop-color="#0EA5E9"/>
-            </linearGradient>
-          </defs>
-          <rect width="36" height="36" rx="9" fill="url(#ocai-f)"/>
-          <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
-          <circle cx="26.5" cy="9.5" r="2" fill="#FBBF24"/>
-        </svg>
-        <span class="tracking-tight">
-          <span class="font-extrabold">OCAI</span> <span class="font-semibold">Solutions</span>
-        </span>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="lockup">
+          <svg width="30" height="30" viewBox="0 0 36 36" aria-hidden="true">
+            <defs>
+              <linearGradient id="ocai-f" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="var(--brand-500)"/>
+                <stop offset="100%" stop-color="var(--brand-cyan)"/>
+              </linearGradient>
+            </defs>
+            <rect width="36" height="36" rx="9" fill="url(#ocai-f)"/>
+            <path d="M18 9a9 9 0 100 18 9 9 0 000-18zm0 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="white" fill-opacity="0.97"/>
+            <circle cx="26.5" cy="9.5" r="2" fill="var(--brand-gold)"/>
+          </svg>
+          <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
+        </a>
+        <p>AI systems for Orange County small business. Operated by Gus, sole proprietorship, Santa Ana CA.</p>
       </div>
-      <p class="text-muted">AI systems for Orange County small business.</p>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#website-rescue">Website Rescue</a></li>
+          <li><a href="services.html#outreach">AI Outreach Engine</a></li>
+          <li><a href="services.html#automation">Workflow Automation</a></li>
+          <li><a href="sample-audit.html">Sample audit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#how">How it works</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h4 class="font-semibold mb-3">Services</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="services.html#website-rescue" class="hover:text-white">Website Rescue</a></li>
-        <li><a href="services.html#outreach" class="hover:text-white">AI Outreach Engine</a></li>
-        <li><a href="services.html#automation" class="hover:text-white">Workflow Automation</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-3">Company</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="about.html" class="hover:text-white">About</a></li>
-        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-3">Legal</h4>
-      <ul class="space-y-2 text-muted">
-        <li><a href="terms.html" class="hover:text-white">Terms of Service</a></li>
-        <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
-        <li><a href="refund.html" class="hover:text-white">Refund Policy</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> OCAI Solutions · Santa Ana, California</p>
+      <p>ocaisolution@gmail.com · Sole proprietorship</p>
     </div>
   </div>
-  <div class="max-w-6xl mx-auto px-6 mt-10 pt-6 border-t border-line text-xs text-muted flex flex-col sm:flex-row justify-between gap-2">
-    <p>© <span id="year"></span> OCAI Solutions · Orange County, California</p>
-    <p>Operated as a sole proprietorship.</p>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
 
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="chatbot.js"></script>
 </body>
 </html>
