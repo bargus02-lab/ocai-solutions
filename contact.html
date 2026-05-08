@@ -84,11 +84,13 @@
         </label>
         <label class="field">
           <span>What can we help with?</span>
-          <select name="service">
-            <option>AI Website Rescue ($197)</option>
-            <option>AI Outreach Engine (custom)</option>
-            <option>AI Workflow Automation (custom)</option>
-            <option>General question</option>
+          <select name="service" id="serviceSelect">
+            <option value="rescue">AI Website Rescue ($197)</option>
+            <option value="outreach-starter">AI Outreach Engine — Starter ($1,497)</option>
+            <option value="outreach-standard">AI Outreach Engine — Standard ($2,497)</option>
+            <option value="outreach-done-with-you">AI Outreach Engine — Done-with-you ($3,997)</option>
+            <option value="automation">AI Workflow Automation (custom)</option>
+            <option value="general">General question</option>
           </select>
         </label>
       </div>
@@ -138,11 +140,22 @@
 </section>
 
 <script>
-  if (new URLSearchParams(location.search).get('sent') === '1') {
+  var params = new URLSearchParams(location.search);
+  if (params.get('sent') === '1') {
     var f = document.getElementById('contactForm');
     var t = document.getElementById('thanks');
     if (f) f.style.display = 'none';
     if (t) t.style.display = '';
+  }
+  // Pre-select dropdown from ?service= URL param
+  var svc = params.get('service');
+  if (svc) {
+    var sel = document.getElementById('serviceSelect');
+    if (sel) {
+      for (var i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].value === svc) { sel.selectedIndex = i; break; }
+      }
+    }
   }
 </script>
 

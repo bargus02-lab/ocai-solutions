@@ -26,7 +26,7 @@
       ]
     },
     pricing: {
-      answer: "<b>AI Website Rescue:</b> flat $197. One payment, no upsells, no retainer. Includes everything listed for the Rescue plus a money-back guarantee.<br><br><b>AI Outreach Engine:</b> custom-quoted per project (typical scope $2,000–$5,000).<br><br><b>AI Workflow Automation:</b> custom-quoted per project — depends on tools and complexity.<br><br>For custom projects we send a written proposal with fixed price, scope, and delivery date before any work starts.",
+      answer: "<b>AI Website Rescue:</b> flat $197, money-back guarantee.<br><br><b>AI Outreach Engine:</b> 3 productized tiers — Starter $1,497 (1 niche, 100 leads), Standard $2,497 (2 niches, 200 leads, post-launch tuning), Done-with-you $3,997 (500 leads, 60-day support).<br><br><b>AI Workflow Automation:</b> custom-quoted per project — depends on tools and complexity.<br><br>For Outreach and Automation we send a written proposal with fixed price, scope, and delivery date before any work starts.",
       buttons: [
         { label: "What if I don't like it?", goto: "refund" },
         { label: "Start a Rescue", goto: "start_rescue" },
