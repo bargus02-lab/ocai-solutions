@@ -71,10 +71,10 @@
       ]
     },
     start_rescue: {
-      answer: "Two easy paths:<br><br>1. <b>Email us your URL</b> at ocaisolution@gmail.com — we'll send a Stripe payment link.<br>2. Or use the <b>contact form</b> with your details.<br><br>Either way, the audit is in your inbox within 24 hours.",
+      answer: "Two paths.<br><br>1. <b>Pay $197 directly</b> — fastest. Reply to the Stripe receipt with your URL and the audit lands within 24 hours.<br>2. Or <b>email us first</b> if you want to ask questions before paying.<br><br>Either way, the audit ships within 24 hours.",
       buttons: [
-        { label: "✉ Email us", url: "mailto:ocaisolution@gmail.com?subject=AI%20Website%20Rescue%20-%20%24197" },
-        { label: "Open contact form", url: "contact.html" },
+        { label: "Pay $197 now →", url: "https://buy.stripe.com/5kQ14o08uetK6GG7Er3cc00" },
+        { label: "✉ Email us first", url: "mailto:ocaisolution@gmail.com?subject=AI%20Website%20Rescue%20-%20%24197" },
         { label: "← Other questions", goto: "start" }
       ]
     }
