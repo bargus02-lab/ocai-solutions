@@ -6,11 +6,10 @@
 
   const TOPICS = {
     start: {
-      greeting: "Hi! I'm the OCAI assistant. We offer three core automations plus two add-ons. Pick a topic — answers in 24/7.",
+      greeting: "Hi! I'm the OCAI assistant. Three productized automations, available 24/7 for questions. Pick a topic.",
       buttons: [
         { label: "What's Instant Lead Response?", goto: "flagship" },
-        { label: "Show me all three core services", goto: "trio" },
-        { label: "What are the add-ons?", goto: "upsells" },
+        { label: "Show me all three services", goto: "trio" },
         { label: "Pricing breakdown", goto: "pricing" },
         { label: "How fast is setup?", goto: "setup_speed" },
         { label: "Can I cancel anytime?", goto: "cancel" },
@@ -26,22 +25,16 @@
       ]
     },
     trio: {
-      answer: "<b>The trio:</b><br><br>★ <b>Instant Lead Response</b> — $750 + $99/mo · Capture: SMS reply to leads within 30 seconds.<br>★ <b>Instant Quote Widget</b> — $600 + $79/mo · Qualify: site visitor picks scope, AI returns a price range, contact captured.<br>★ <b>Review Engine</b> — $600 + $79/mo · Repeat: auto-request reviews after every completed job.<br><br>Bundle all three and save 15% on combined setup.",
+      answer: "<b>Three productized automations:</b><br><br>★ <b>Instant Lead Response</b> — $750 + $99/mo · Capture: SMS reply to leads within 30 seconds.<br>★ <b>Instant Quote Widget</b> — $600 + $79/mo · Qualify: site visitor picks scope, AI returns a price range, contact captured.<br>★ <b>Review Engine</b> — $600 + $79/mo · Repeat: auto-request reviews after every completed job.<br><br>Bundle all three and save 15% on combined setup.",
       buttons: [
         { label: "See full details", url: "services.html" },
         { label: "Start with the flagship", goto: "start_flagship" },
         { label: "← Other questions", goto: "start" }
       ]
     },
-    upsells: {
-      answer: "Two add-ons available alongside the trio:<br><br><b>Proposal Builder</b> — $1,500 + $149/mo. Voice memo describing a job becomes a branded PDF proposal sent to the client.<br><br><b>Receipt Capture</b> — $900 + $99/mo. Forward receipts to a magic email; AI extracts data and posts to QuickBooks.<br><br>Most customers add these after the trio is running. Available to anyone who asks.",
-      buttons: [
-        { label: "See add-on details", url: "services.html#upsells" },
-        { label: "← Other questions", goto: "start" }
-      ]
-    },
+
     pricing: {
-      answer: "<b>The trio:</b><br>• Instant Lead Response — $750 + $99/mo<br>• Instant Quote Widget — $600 + $79/mo<br>• Review Engine — $600 + $79/mo<br>• <i>Bundle all three: 15% off combined setup</i><br><br><b>Add-ons:</b><br>• Proposal Builder — $1,500 + $149/mo<br>• Receipt Capture — $900 + $99/mo<br><br>All month-to-month — no annual contracts.",
+      answer: "<b>The trio:</b><br>• Instant Lead Response — $750 setup + $99/mo<br>• Instant Quote Widget — $600 setup + $79/mo<br>• Review Engine — $600 setup + $79/mo<br><br>Bundle all three and save 15% on combined setup. All month-to-month — no annual contracts.",
       buttons: [
         { label: "How fast is setup?", goto: "setup_speed" },
         { label: "Can I cancel?", goto: "cancel" },
