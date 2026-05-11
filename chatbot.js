@@ -25,7 +25,7 @@
       ]
     },
     trio: {
-      answer: "<b>Three productized automations:</b><br><br>★ <b>Instant Lead Response</b> — $750 + $99/mo · Capture: SMS reply to leads within 30 seconds.<br>★ <b>Instant Quote Widget</b> — $600 + $79/mo · Qualify: site visitor picks scope, AI returns a price range, contact captured.<br>★ <b>Review Engine</b> — $600 + $79/mo · Repeat: auto-request reviews after every completed job.<br><br>Bundle all three and save 15% on combined setup.",
+      answer: "<b>Three productized automations:</b><br><br>★ <b>Instant Lead Response</b> — $750 + $99/mo · Capture: SMS reply to leads within 30 seconds.<br>★ <b>Instant Quote Widget</b> — $600 + $79/mo · Qualify: site visitor picks scope, AI returns a price range, contact captured.<br>★ <b>Review Engine</b> — $600 + $79/mo · Repeat: auto-request reviews after every completed job.<br><br><b>Bundle the trio:</b> $1,650 setup + $257/mo. Save $300 vs buying separately.",
       buttons: [
         { label: "See full details", url: "services.html" },
         { label: "Start with the flagship", goto: "start_flagship" },
@@ -34,7 +34,7 @@
     },
 
     pricing: {
-      answer: "<b>The trio:</b><br>• Instant Lead Response — $750 setup + $99/mo<br>• Instant Quote Widget — $600 setup + $79/mo<br>• Review Engine — $600 setup + $79/mo<br><br>Bundle all three and save 15% on combined setup. All month-to-month — no annual contracts.",
+      answer: "<b>The trio:</b><br>• Instant Lead Response — $750 setup + $99/mo<br>• Instant Quote Widget — $600 setup + $79/mo<br>• Review Engine — $600 setup + $79/mo<br><br><b>Bundle all three:</b> $1,650 setup + $257/mo (save $300). All month-to-month — no annual contracts.",
       buttons: [
         { label: "How fast is setup?", goto: "setup_speed" },
         { label: "Can I cancel?", goto: "cancel" },
