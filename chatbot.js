@@ -6,59 +6,59 @@
 
   const TOPICS = {
     start: {
-      greeting: "Hi! I'm the OCAI assistant. I can answer common questions about our services 24/7 — pick a topic below.",
+      greeting: "Hi! I'm the OCAI assistant. I can answer common questions about our 6 automation services 24/7 — pick a topic.",
       buttons: [
-        { label: "What's an AI Website Rescue?", goto: "rescue" },
-        { label: "How much does it cost?", goto: "pricing" },
-        { label: "How fast is delivery?", goto: "turnaround" },
-        { label: "Do you offer refunds?", goto: "refund" },
+        { label: "What's Instant Lead Response?", goto: "flagship" },
+        { label: "Show me all 6 services", goto: "all_services" },
+        { label: "Pricing breakdown", goto: "pricing" },
+        { label: "How fast is setup?", goto: "setup_speed" },
+        { label: "Can I cancel anytime?", goto: "cancel" },
         { label: "Do you serve outside Orange County?", goto: "area" },
-        { label: "Can I see a sample audit?", goto: "sample" },
         { label: "Email a real person", goto: "email" }
       ]
     },
-    rescue: {
-      answer: "An <b>AI Website Rescue</b> is a $197 audit and rewrite of your website's most important copy. You get:<br><br>• Rewritten homepage hero (headline + subheadline + CTA)<br>• Rewritten services section (problem → solution → proof)<br>• 3 SEO meta description options<br>• Top 5 conversion fixes ranked by revenue impact<br>• A 5-minute Loom walkthrough explaining every change<br><br>Delivered as a Google Doc within 24 hours of payment.",
+    flagship: {
+      answer: "<b>Instant Lead Response</b> is our flagship — $750 setup + $99/mo.<br><br>Your contact form fills out, your lead gets an SMS confirmation within 30 seconds, you get a text alert, and the lead is logged to your CRM or Google Sheet. Built in tools you already pay for (Zapier, Make, n8n). Setup in 1 week. Month-to-month — cancel anytime.<br><br>Great for roofers, HVAC, plumbers, dentists, contractors — any business with inbound form leads.",
       buttons: [
-        { label: "How much does it cost?", goto: "pricing" },
-        { label: "Show me a sample", goto: "sample" },
+        { label: "Start setup", goto: "start_flagship" },
+        { label: "Show me all 6 services", goto: "all_services" },
+        { label: "← Other questions", goto: "start" }
+      ]
+    },
+    all_services: {
+      answer: "<b>Six productized automations:</b><br><br>★ <b>Instant Lead Response</b> — $750 + $99/mo<br><b>Voicemail Triage</b> — $1,200 + $149/mo<br><b>Proposal Builder</b> — $1,500 + $149/mo<br><b>Review Engine</b> — $600 + $79/mo<br><b>Inbox Co-Pilot</b> — $1,000 + $199/mo<br><b>Receipt Capture</b> — $900 + $99/mo<br><br>Bundle 2+ services and save 15% on combined setup.",
+      buttons: [
+        { label: "See full details", url: "services.html" },
+        { label: "Start with the flagship", goto: "start_flagship" },
         { label: "← Other questions", goto: "start" }
       ]
     },
     pricing: {
-      answer: "<b>AI Website Rescue:</b> flat $197, money-back guarantee.<br><br><b>AI Outreach Engine:</b> 3 productized tiers — Starter $1,497 (1 niche, 100 leads), Standard $2,497 (2 niches, 200 leads, post-launch tuning), Done-with-you $3,997 (500 leads, 60-day support).<br><br><b>AI Workflow Automation:</b> 3 tiers — Single Workflow $1,997, Connected $4,497, Custom Build from $7,997.<br><br>For Outreach and Automation we send a written proposal with fixed price, scope, and delivery date before any work starts.",
+      answer: "Each service has a one-time <b>setup fee</b> and a monthly <b>retainer</b>.<br><br>• Setup covers installation, testing, and a handoff doc.<br>• Retainer covers monitoring, edge-case fixes, prompt tuning, and small adjustments.<br><br>Month-to-month — no annual contracts. Bundle 2+ services and we discount the combined setup by 15%.",
       buttons: [
-        { label: "What if I don't like it?", goto: "refund" },
-        { label: "Start a Rescue", goto: "start_rescue" },
+        { label: "See all 6 prices", goto: "all_services" },
+        { label: "Can I cancel?", goto: "cancel" },
         { label: "← Other questions", goto: "start" }
       ]
     },
-    turnaround: {
-      answer: "Most Website Rescues are delivered within <b>24 hours of payment</b>, often sooner. Custom projects are scoped with a specific delivery date in your proposal.",
+    setup_speed: {
+      answer: "Most automations are <b>live within 5–7 business days</b> of the kickoff call. Proposal Builder is the only one that sometimes runs into a second week if your branding needs custom work. After setup, you get a 30-minute walkthrough call before the monthly retainer starts.",
       buttons: [
-        { label: "What if it's not useful?", goto: "refund" },
+        { label: "Start setup", goto: "start_flagship" },
         { label: "← Other questions", goto: "start" }
       ]
     },
-    refund: {
-      answer: "Yes — the Website Rescue carries a <b>full money-back guarantee</b>. If the audit isn't useful, reply to the delivery email asking for a refund and we return all $197 within 5 business days. No questions, no calls. Custom projects have refund terms set in each individual proposal.",
+    cancel: {
+      answer: "Yes — <b>month-to-month, cancel anytime</b> by email. No annual contracts, no early-termination fees. The automation keeps running in your tools after you cancel — you just lose our monitoring and tuning. If something breaks later, we offer one-off hourly fixes.",
       buttons: [
-        { label: "Read the full refund policy", url: "refund.html" },
+        { label: "Start setup", goto: "start_flagship" },
         { label: "← Other questions", goto: "start" }
       ]
     },
     area: {
-      answer: "We're based in <b>Orange County, California</b> but the work is fully remote. We've worked with businesses across the U.S. — anywhere you have a website, we can audit it.",
+      answer: "We're based in <b>Orange County, California</b> but the work is fully remote. We've worked with businesses across the U.S. — anywhere you have a CRM and an inbox, we can install the automation.",
       buttons: [
-        { label: "Start a Rescue", goto: "start_rescue" },
-        { label: "← Other questions", goto: "start" }
-      ]
-    },
-    sample: {
-      answer: "Yes — see what a real $197 audit looks like with the business name anonymized. Great way to understand what you'd actually get.",
-      buttons: [
-        { label: "View sample audit →", url: "sample-audit.html" },
-        { label: "Start your own", goto: "start_rescue" },
+        { label: "Start setup", goto: "start_flagship" },
         { label: "← Other questions", goto: "start" }
       ]
     },
@@ -70,11 +70,11 @@
         { label: "← Other questions", goto: "start" }
       ]
     },
-    start_rescue: {
-      answer: "Two paths.<br><br>1. <b>Pay $197 directly</b> — fastest. Reply to the Stripe receipt with your URL and the audit lands within 24 hours.<br>2. Or <b>email us first</b> if you want to ask questions before paying.<br><br>Either way, the audit ships within 24 hours.",
+    start_flagship: {
+      answer: "Two paths:<br><br>1. <b>Email us</b> at ocaisolution@gmail.com with which service you want — we'll schedule a 20-min discovery call.<br>2. Or use the <b>contact form</b> with your details — we'll reach out within one business day.<br><br>After the call, you get a written proposal with fixed setup price, start date, and what's included. You pay setup, we install, and the retainer kicks in month two.",
       buttons: [
-        { label: "Pay $197 now →", url: "https://buy.stripe.com/5kQ14o08uetK6GG7Er3cc00" },
-        { label: "✉ Email us first", url: "mailto:ocaisolution@gmail.com?subject=AI%20Website%20Rescue%20-%20%24197" },
+        { label: "Email us", url: "mailto:ocaisolution@gmail.com?subject=Instant%20Lead%20Response%20setup" },
+        { label: "Open contact form", url: "contact.html?service=lead-response" },
         { label: "← Other questions", goto: "start" }
       ]
     }
