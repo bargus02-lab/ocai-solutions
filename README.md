@@ -1,19 +1,29 @@
 # ocaisolutions.com
 
-Static marketing site for **OCAI Solutions** — six productized AI automation services for Orange County small business.
+Static marketing site for **OCAI Solutions** — three productized AI automations for Orange County small business, plus two upsells.
 
-## Services lineup
+## Marketing trio
 
-| # | Service | Setup | Retainer |
-|---|---|---|---|
-| ★ Flagship | Instant Lead Response | $750 | $99/mo |
-| 2 | Voicemail Triage | $1,200 | $149/mo |
-| 3 | Proposal Builder | $1,500 | $149/mo |
-| 4 | Review Engine | $600 | $79/mo |
-| 5 | Inbox Co-Pilot | $1,000 | $199/mo |
-| 6 | Receipt Capture | $900 | $99/mo |
+| # | Service | Setup | Retainer | Role |
+|---|---|---|---|---|
+| ★ | Instant Lead Response | $750 | $99/mo | Capture leads in 30 sec |
+| ★ | Instant Quote Widget | $600 | $79/mo | Qualify visitors with instant pricing |
+| ★ | Review Engine | $600 | $79/mo | Auto-request reviews after every job |
 
-Bundle 2+ services → 15% off combined setup. Retainers stay separate.
+Bundle all three → 15% off combined setup. Retainers stay separate.
+
+## Add-ons (not headlined, available to anyone)
+
+| Service | Setup | Retainer |
+|---|---|---|
+| Proposal Builder | $1,500 | $149/mo |
+| Receipt Capture | $900 | $99/mo |
+
+## Retired products (no longer sold)
+
+- ~~AI Website Rescue~~ (replaced by automation lineup; audit scripts kept as private internal tool)
+- ~~Voicemail Triage~~
+- ~~Inbox Co-Pilot~~
 
 ## Stack
 
@@ -37,19 +47,18 @@ Edit any `.html` or `.css` file → commit → push to `main`. Pages republishes
 
 | File | Purpose |
 |---|---|
-| `index.html` | Landing — hero, 6 services grid, why-us, how setup works, FAQ, final CTA |
-| `services.html` | Detail page per service with anchor links (`#lead-response`, `#voicemail`, etc.) |
+| `index.html` | Landing — hero, 3-product trio grid, trust, how setup works, FAQ, final CTA |
+| `services.html` | Three full product detail pages + 2 upsell cards + bundle CTA |
 | `about.html` | Company background |
-| `contact.html` | Form (Formsubmit → ocaisolution@gmail.com) + dropdown for all 6 services |
-| `thanks.html` | Post-form confirmation page (generic — no longer post-Stripe-payment) |
-| `terms.html`, `privacy.html`, `refund.html` | Legal pages |
-| `chatbot.js` | Guided FAQ widget (covers new 6-product lineup) |
-| `styles.css` | Editorial design system (amber palette) |
+| `contact.html` | Form (Formsubmit → ocaisolution@gmail.com) + dropdown organized: trio first, upsells after |
+| `thanks.html` | Post-form confirmation page |
+| `terms.html`, `privacy.html`, `refund.html` | Legal pages (setup-fee + retainer model) |
+| `chatbot.js` | Guided FAQ widget covering trio + upsells |
+| `styles.css` | Editorial design system + trio-product-card styles |
 | `CNAME`, `robots.txt`, `sitemap.xml`, `favicon.svg` | Supporting |
 
 ## Configuration touchpoints
 
-- **Stripe Payment Links** — Each service has its own setup + retainer products. Currently NOT wired into public CTAs (all setups go through contact form first to gather intake info). Operator sends payment links manually after the 20-min discovery call.
+- **Stripe Payment Links** — create per service as needed; the public site funnels all 5 services through the contact form (no public buy-now buttons). Operator sends payment links manually after the 20-min discovery call.
 - **Email** — `ocaisolution@gmail.com` referenced throughout.
 - **Phone** — none listed by design.
-- **Old AI Website Rescue product** — retired. The internal `audit_engine.py` codebase at `/Users/baboso/Documents/ai-website-rescue/` remains as a private operator tool for prospect research, not sold as a product.

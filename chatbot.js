@@ -6,43 +6,50 @@
 
   const TOPICS = {
     start: {
-      greeting: "Hi! I'm the OCAI assistant. I can answer common questions about our 6 automation services 24/7 — pick a topic.",
+      greeting: "Hi! I'm the OCAI assistant. We offer three core automations plus two add-ons. Pick a topic — answers in 24/7.",
       buttons: [
         { label: "What's Instant Lead Response?", goto: "flagship" },
-        { label: "Show me all 6 services", goto: "all_services" },
+        { label: "Show me all three core services", goto: "trio" },
+        { label: "What are the add-ons?", goto: "upsells" },
         { label: "Pricing breakdown", goto: "pricing" },
         { label: "How fast is setup?", goto: "setup_speed" },
         { label: "Can I cancel anytime?", goto: "cancel" },
-        { label: "Do you serve outside Orange County?", goto: "area" },
         { label: "Email a real person", goto: "email" }
       ]
     },
     flagship: {
-      answer: "<b>Instant Lead Response</b> is our flagship — $750 setup + $99/mo.<br><br>Your contact form fills out, your lead gets an SMS confirmation within 30 seconds, you get a text alert, and the lead is logged to your CRM or Google Sheet. Built in tools you already pay for (Zapier, Make, n8n). Setup in 1 week. Month-to-month — cancel anytime.<br><br>Great for roofers, HVAC, plumbers, dentists, contractors — any business with inbound form leads.",
+      answer: "<b>Instant Lead Response</b> is the flagship — $750 setup + $99/mo.<br><br>Your contact form fills out, your lead gets an SMS confirmation within 30 seconds, you get a text alert, and the lead is logged to your CRM or Google Sheet. Built in tools you already pay for (Zapier, Make, n8n). Setup in 1 week. Month-to-month — cancel anytime.<br><br>Great for roofers, HVAC, plumbers, dentists, contractors — any business with inbound form leads.",
       buttons: [
         { label: "Start setup", goto: "start_flagship" },
-        { label: "Show me all 6 services", goto: "all_services" },
+        { label: "Show me all three", goto: "trio" },
         { label: "← Other questions", goto: "start" }
       ]
     },
-    all_services: {
-      answer: "<b>Six productized automations:</b><br><br>★ <b>Instant Lead Response</b> — $750 + $99/mo<br><b>Voicemail Triage</b> — $1,200 + $149/mo<br><b>Proposal Builder</b> — $1,500 + $149/mo<br><b>Review Engine</b> — $600 + $79/mo<br><b>Inbox Co-Pilot</b> — $1,000 + $199/mo<br><b>Receipt Capture</b> — $900 + $99/mo<br><br>Bundle 2+ services and save 15% on combined setup.",
+    trio: {
+      answer: "<b>The trio:</b><br><br>★ <b>Instant Lead Response</b> — $750 + $99/mo · Capture: SMS reply to leads within 30 seconds.<br>★ <b>Instant Quote Widget</b> — $600 + $79/mo · Qualify: site visitor picks scope, AI returns a price range, contact captured.<br>★ <b>Review Engine</b> — $600 + $79/mo · Repeat: auto-request reviews after every completed job.<br><br>Bundle all three and save 15% on combined setup.",
       buttons: [
         { label: "See full details", url: "services.html" },
         { label: "Start with the flagship", goto: "start_flagship" },
         { label: "← Other questions", goto: "start" }
       ]
     },
-    pricing: {
-      answer: "Each service has a one-time <b>setup fee</b> and a monthly <b>retainer</b>.<br><br>• Setup covers installation, testing, and a handoff doc.<br>• Retainer covers monitoring, edge-case fixes, prompt tuning, and small adjustments.<br><br>Month-to-month — no annual contracts. Bundle 2+ services and we discount the combined setup by 15%.",
+    upsells: {
+      answer: "Two add-ons available alongside the trio:<br><br><b>Proposal Builder</b> — $1,500 + $149/mo. Voice memo describing a job becomes a branded PDF proposal sent to the client.<br><br><b>Receipt Capture</b> — $900 + $99/mo. Forward receipts to a magic email; AI extracts data and posts to QuickBooks.<br><br>Most customers add these after the trio is running. Available to anyone who asks.",
       buttons: [
-        { label: "See all 6 prices", goto: "all_services" },
+        { label: "See add-on details", url: "services.html#upsells" },
+        { label: "← Other questions", goto: "start" }
+      ]
+    },
+    pricing: {
+      answer: "<b>The trio:</b><br>• Instant Lead Response — $750 + $99/mo<br>• Instant Quote Widget — $600 + $79/mo<br>• Review Engine — $600 + $79/mo<br>• <i>Bundle all three: 15% off combined setup</i><br><br><b>Add-ons:</b><br>• Proposal Builder — $1,500 + $149/mo<br>• Receipt Capture — $900 + $99/mo<br><br>All month-to-month — no annual contracts.",
+      buttons: [
+        { label: "How fast is setup?", goto: "setup_speed" },
         { label: "Can I cancel?", goto: "cancel" },
         { label: "← Other questions", goto: "start" }
       ]
     },
     setup_speed: {
-      answer: "Most automations are <b>live within 5–7 business days</b> of the kickoff call. Proposal Builder is the only one that sometimes runs into a second week if your branding needs custom work. After setup, you get a 30-minute walkthrough call before the monthly retainer starts.",
+      answer: "Most automations are <b>live within 3–7 business days</b> of the kickoff call. Review Engine is fastest (3 days), Quote Widget next (5 days), Lead Response a full week. After setup, you get a 30-minute walkthrough call before the monthly retainer starts.",
       buttons: [
         { label: "Start setup", goto: "start_flagship" },
         { label: "← Other questions", goto: "start" }
@@ -50,13 +57,6 @@
     },
     cancel: {
       answer: "Yes — <b>month-to-month, cancel anytime</b> by email. No annual contracts, no early-termination fees. The automation keeps running in your tools after you cancel — you just lose our monitoring and tuning. If something breaks later, we offer one-off hourly fixes.",
-      buttons: [
-        { label: "Start setup", goto: "start_flagship" },
-        { label: "← Other questions", goto: "start" }
-      ]
-    },
-    area: {
-      answer: "We're based in <b>Orange County, California</b> but the work is fully remote. We've worked with businesses across the U.S. — anywhere you have a CRM and an inbox, we can install the automation.",
       buttons: [
         { label: "Start setup", goto: "start_flagship" },
         { label: "← Other questions", goto: "start" }
