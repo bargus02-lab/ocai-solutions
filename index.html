@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OCAI Solutions — AI automations that actually make small businesses money</title>
-<meta name="description" content="OCAI Solutions ships fixed-price AI automations for Orange County small business. Instant lead response, AI quote widget, automated reviews. Setup in 1 week, pay monthly.">
+<title>OCAI Solutions — Premium AI automations for Orange County businesses</title>
+<meta name="description" content="OCAI Solutions designs and ships AI automations for Orange County businesses. Instant lead response, AI quote widgets, review engines, custom workflow builds, and self-refreshing sales dashboards. Fixed price, fixed timeline, cancel anytime.">
+<meta name="theme-color" content="#050813">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OCAI Solutions">
-<meta property="og:title" content="OCAI Solutions — AI automations that actually make small businesses money">
-<meta property="og:description" content="OCAI Solutions ships fixed-price AI automations for Orange County small business. Instant lead response, AI quote widget, automated reviews. Setup in 1 week, pay monthly.">
+<meta property="og:title" content="OCAI Solutions — Premium AI automations for Orange County businesses">
+<meta property="og:description" content="Productized AI automations built by an Orange County operator. Fixed price. One-week setup. Cancel anytime.">
 <meta property="og:url" content="https://ocaisolutions.com/">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OCAI Solutions — AI automations that actually make small businesses money">
-<meta name="twitter:description" content="OCAI Solutions ships fixed-price AI automations for Orange County small business. Instant lead response, AI quote widget, automated reviews. Setup in 1 week, pay monthly.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OCAI Solutions — Premium AI automations for Orange County businesses">
+<meta name="twitter:description" content="Productized AI automations built by an Orange County operator. Fixed price. One-week setup. Cancel anytime.">
 <link rel="icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
 <script type="application/ld+json">
@@ -25,25 +26,30 @@
   "@type": "ProfessionalService",
   "name": "OCAI Solutions",
   "alternateName": "OCAI",
-  "description": "Productized AI automation services for Orange County small businesses. Three productized services: Instant Lead Response, Instant Quote Widget, Review Engine.",
+  "description": "Productized AI automation agency for Orange County businesses. Services include Instant Lead Response, Instant Quote Widget, Review Engine, Custom AI Workflow builds, and Sales Report Rescue.",
   "url": "https://ocaisolutions.com",
   "email": "ocaisolution@gmail.com",
-  "priceRange": "$600+",
+  "priceRange": "$600 – $2,500+",
   "areaServed": {"@type": "AdministrativeArea", "name": "Orange County, California"},
   "address": {"@type": "PostalAddress", "addressRegion": "CA", "addressCountry": "US"},
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "AI Automation Services",
     "itemListElement": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Instant Lead Response", "description": "Form fill triggers instant SMS to lead and owner, logs the lead in your CRM. Setup $750, $99/mo."}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Instant Quote Widget", "description": "Visitor picks scope, AI returns a price range, contact captured. Setup $600, $79/mo."}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Review Engine", "description": "Automated review requests after job completion plus follow-ups and alerts. Setup $600, $79/mo."}}
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Instant Lead Response", "description": "Form fill triggers instant SMS to lead and owner, logs to CRM. $750 setup + $99/mo."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Instant Quote Widget", "description": "AI returns a price range to visitors and captures the lead. $600 setup + $79/mo."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Review Engine", "description": "Automated personalized review requests with follow-up + negative-review early warning. $600 setup + $79/mo."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom AI Workflow", "description": "Bespoke AI workflow build for inbox triage, scheduling, intake, ops automation. From $2,500 setup + $400/mo."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sales Report Rescue", "description": "5-day build of a self-refreshing sales dashboard from a CRM CSV export. $1,250 setup + $400/mo."}}
     ]
   }
 }
 </script>
 </head>
 <body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <header class="site-header">
   <div class="header-row">
     <a href="/" class="lockup" aria-label="OCAI Solutions home">
@@ -60,222 +66,380 @@
       </svg>
       <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
     </a>
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" data-nav aria-label="Primary">
       <a href="services.html" class="nav-link">Services</a>
       <a href="about.html" class="nav-link">About</a>
       <a href="contact.html" class="nav-link">Contact</a>
-      <a href="contact.html?service=lead-response" class="btn btn-gradient btn-sm nav-cta">Get Started <span class="arrow" aria-hidden="true">→</span></a>
+      <a href="contact.html?service=lead-response" class="btn btn-gradient btn-sm nav-cta" data-magnetic data-magnetic-strength="0.18">Get Started <span class="arrow" aria-hidden="true">→</span></a>
     </nav>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
   </div>
 </header>
 
-<section class="hero variant-subtle">
-  <div class="hero-glow hero-glow-1"></div>
-  <div class="hero-glow hero-glow-2"></div>
-  <div class="hero-grid"></div>
+<!-- ============ HERO ============ -->
+<section class="hero v2">
+  <div class="aurora-wrap" aria-hidden="true">
+    <canvas data-aurora></canvas>
+    <div class="aurora-grid"></div>
+    <div class="aurora-mask"></div>
+  </div>
 
   <div class="container">
-    <div class="hero-inner">
-      <div>
-        <div class="hero-eyebrow-row">
-          <span class="loc">Orange County, California · Est. 2025</span>
-        </div>
+    <div data-reveal="fade">
+      <span class="hero-kicker">
+        <span class="live-dot"></span>
+        Orange County, California
+        <span class="arrow" aria-hidden="true">→</span>
+        Now booking June pilots
+      </span>
+    </div>
 
-        <h1 class="display hero-headline">
-          AI automations that actually<br class="hide-mobile"> <em>make small businesses money.</em>
-        </h1>
+    <h1 class="hero-display-v2" data-reveal>
+      <span data-split>AI automations</span>
+      <span class="gradient-text" data-split>that pay for themselves.</span>
+    </h1>
 
-        <p class="hero-sub">
-          Instant SMS to your inbound leads. AI-priced quote widget on your site. Auto-requested reviews after every job.
-          Three productized automations that turn website traffic into booked customers — setup in a week, paid monthly, cancel anytime.
-        </p>
+    <p class="hero-sub-v2" data-reveal data-reveal-delay="100">
+      We design, install, and run premium AI workflows for Orange County businesses — instant lead reply, AI quote widgets, review engines, custom automations, and self-refreshing sales dashboards. Fixed price. Live in a week. Cancel anytime.
+    </p>
 
-        <div class="hero-cta-row">
-          <a href="services.html#lead-response" class="btn btn-gradient btn-lg">
-            Start with Instant Lead Response <span class="arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="services.html" class="btn btn-secondary btn-lg">See the trio</a>
-        </div>
+    <div class="hero-cta-row-v2" data-reveal data-reveal-delay="200">
+      <a href="services.html" class="btn btn-premium" data-magnetic data-magnetic-strength="0.22">
+        See the lineup <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a href="contact.html?service=custom" class="btn btn-ghost-premium" data-magnetic data-magnetic-strength="0.15">
+        Book a 20-min call
+      </a>
+    </div>
 
-        <div class="hero-microcopy">
-          <span class="check">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            1-week setup
-          </span>
-          <span class="sep">·</span>
-          <span class="check">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Pay monthly
-          </span>
-          <span class="sep">·</span>
-          <span class="check">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-            Cancel anytime
-          </span>
-        </div>
+    <div class="hero-stats" data-reveal data-reveal-delay="320">
+      <div class="stat">
+        <div class="num"><span data-counter="30" data-counter-suffix="s">0</span></div>
+        <div class="lbl">Avg lead reply time</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span data-counter="7" data-counter-suffix="d">0</span></div>
+        <div class="lbl">Median time to live</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span data-counter="100" data-counter-suffix="%">0</span></div>
+        <div class="lbl">Month-to-month, no lock-in</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span data-counter="5" data-counter-suffix="">0</span></div>
+        <div class="lbl">Productized services</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="services">
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Roofers</span>
+    <span class="marquee-item">HVAC</span>
+    <span class="marquee-item">Med Spas</span>
+    <span class="marquee-item">Dentists</span>
+    <span class="marquee-item">Painters</span>
+    <span class="marquee-item">Law Firms</span>
+    <span class="marquee-item">Sales Teams</span>
+    <span class="marquee-item">Pool Builders</span>
+    <span class="marquee-item">Solar Installers</span>
+    <span class="marquee-item">Landscapers</span>
+    <span class="marquee-item">Contractors</span>
+    <span class="marquee-item">Auto Detailers</span>
+    <span class="marquee-item">Property Managers</span>
+    <span class="marquee-item">Fitness Studios</span>
+    <!-- duplicate for seamless loop -->
+    <span class="marquee-item">Roofers</span>
+    <span class="marquee-item">HVAC</span>
+    <span class="marquee-item">Med Spas</span>
+    <span class="marquee-item">Dentists</span>
+    <span class="marquee-item">Painters</span>
+    <span class="marquee-item">Law Firms</span>
+    <span class="marquee-item">Sales Teams</span>
+    <span class="marquee-item">Pool Builders</span>
+    <span class="marquee-item">Solar Installers</span>
+    <span class="marquee-item">Landscapers</span>
+    <span class="marquee-item">Contractors</span>
+    <span class="marquee-item">Auto Detailers</span>
+    <span class="marquee-item">Property Managers</span>
+    <span class="marquee-item">Fitness Studios</span>
+  </div>
+</div>
+
+<!-- ============ PRODUCTS BENTO ============ -->
+<section class="section v2" id="services">
   <div class="container">
-    <header class="section-masthead">
-      <div class="meta">
-        <span class="num">02</span>
-        <span class="label">The trio</span>
-        <span class="desc">Three productized automations. Each one works standalone. All three together = a complete inbound system.</span>
-      </div>
-      <h2 class="section-title">Three pieces. <em style="font-style:normal;color:var(--brand-400)">One machine.</em></h2>
-    </header>
+    <div data-reveal>
+      <span class="section-kicker">01 — The lineup</span>
+      <h2 class="section-title">Five productized services. <em style="font-style:normal;color:var(--brand-400)">One operator.</em></h2>
+      <p class="lead" style="margin-top:20px;max-width:60ch">Each one ships on a fixed price and timeline. Stack them or buy one — every service runs on its own.</p>
+    </div>
 
-    <div class="services" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch">
+    <div class="product-grid" style="margin-top:48px">
 
-      <a href="services.html#lead-response" class="trio-product-card">
-        <div class="trio-eyebrow">★ Capture</div>
+      <!-- Featured: Custom AI Workflow -->
+      <a href="services.html#custom-workflow" class="product-card feature span-3-tall" data-reveal data-spotlight>
+        <div class="pc-head">
+          <span class="pc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </span>
+          <span class="pc-tag">★ Anchor</span>
+        </div>
+        <h3>Custom AI Workflow Build</h3>
+        <p class="pc-line">When the off-the-shelf trio isn't enough. We scope, design, and build a bespoke AI workflow for inbox triage, scheduling, intake, document processing, or any back-office task chewing your week.</p>
+        <ul class="pc-features">
+          <li>Discovery + scoping session</li>
+          <li>Built in Zapier / Make / n8n / Apps Script</li>
+          <li>Custom prompts, evals, monitoring</li>
+          <li>Written runbook + live handoff</li>
+        </ul>
+        <div class="pc-foot">
+          <span class="pc-price">From $2,500<span class="mo">+ $400/mo</span></span>
+          <span class="pc-cta">See scope <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <!-- Sales Report Rescue -->
+      <a href="services.html#sales-report-rescue" class="product-card span-3-tall" data-reveal data-reveal-delay="80" data-spotlight>
+        <div class="pc-head">
+          <span class="pc-icon" style="background:linear-gradient(135deg, rgba(168,85,247,0.18), rgba(6,182,212,0.10)); border-color: rgba(168,85,247,0.30); color:#C4A0FB;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+          </span>
+          <span class="pc-tag cool">B2B Sales Teams</span>
+        </div>
+        <h3>Sales Report Rescue</h3>
+        <p class="pc-line">A self-refreshing sales dashboard built from your CRM export in 5 business days. Stop pasting screenshots into Monday-morning decks. Real pipeline visibility for HubSpot / Pipedrive / Salesforce / Close.</p>
+        <ul class="pc-features">
+          <li>5-day build from a CSV export</li>
+          <li>Pipeline, velocity, rep performance, leak points</li>
+          <li>Auto-refresh — no IT involvement</li>
+          <li>30-min team walkthrough included</li>
+        </ul>
+        <div class="pc-foot">
+          <span class="pc-price">$1,250<span class="mo">+ $400/mo ops seat</span></span>
+          <span class="pc-cta">See dashboard <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <!-- Instant Lead Response -->
+      <a href="services.html#lead-response" class="product-card span-2" data-reveal data-spotlight>
+        <div class="pc-head">
+          <span class="pc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </span>
+          <span class="pc-tag">★ Capture</span>
+        </div>
         <h3>Instant Lead Response</h3>
-        <p class="trio-tagline">Form fills out at 9pm. Lead gets an SMS in 30 sec. You get an alert. Lead logged.</p>
-        <div class="trio-price-block">
-          <div class="trio-price"><span class="dollar">$</span>750</div>
-          <div class="trio-price-sub">+ $99/mo · 1 week setup</div>
-        </div>
-        <ul class="trio-features">
-          <li>Instant SMS to the lead</li>
-          <li>Owner text alert with details</li>
-          <li>Auto-logged to your CRM</li>
-          <li>Smart routing by service / hours</li>
-        </ul>
-        <div class="trio-cta">
-          <span>See details <span aria-hidden="true">→</span></span>
+        <p class="pc-line">Form fills at 9pm. Lead gets an SMS in 30 seconds. You get an alert. Stop refreshing.</p>
+        <div class="pc-foot">
+          <span class="pc-price">$750<span class="mo">+ $99/mo</span></span>
+          <span class="pc-cta">Details <span aria-hidden="true">→</span></span>
         </div>
       </a>
 
-      <a href="services.html#quote-widget" class="trio-product-card">
-        <div class="trio-eyebrow">★ Qualify</div>
+      <!-- Instant Quote Widget -->
+      <a href="services.html#quote-widget" class="product-card span-2" data-reveal data-reveal-delay="60" data-spotlight>
+        <div class="pc-head">
+          <span class="pc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </span>
+          <span class="pc-tag">★ Qualify</span>
+        </div>
         <h3>Instant Quote Widget</h3>
-        <p class="trio-tagline">Visitor picks scope. AI returns a price range. Captures contact. No more "what's a ballpark?" calls.</p>
-        <div class="trio-price-block">
-          <div class="trio-price"><span class="dollar">$</span>600</div>
-          <div class="trio-price-sub">+ $79/mo · 5 day setup</div>
-        </div>
-        <ul class="trio-features">
-          <li>5–8 question AI conversation</li>
-          <li>Pricing rules around your margins</li>
-          <li>Lead captured with full context</li>
-          <li>WordPress / Webflow / Squarespace / Wix</li>
-        </ul>
-        <div class="trio-cta">
-          <span>See details <span aria-hidden="true">→</span></span>
+        <p class="pc-line">AI asks 5–8 questions, returns a price range, captures the lead with full context.</p>
+        <div class="pc-foot">
+          <span class="pc-price">$600<span class="mo">+ $79/mo</span></span>
+          <span class="pc-cta">Details <span aria-hidden="true">→</span></span>
         </div>
       </a>
 
-      <a href="services.html#reviews" class="trio-product-card">
-        <div class="trio-eyebrow">★ Repeat</div>
-        <h3>Review Engine</h3>
-        <p class="trio-tagline">Job complete. AI sends a personalized review ask. Follows up if ignored. Alerts you before negatives go public.</p>
-        <div class="trio-price-block">
-          <div class="trio-price"><span class="dollar">$</span>600</div>
-          <div class="trio-price-sub">+ $79/mo · 3 day setup</div>
+      <!-- Review Engine -->
+      <a href="services.html#reviews" class="product-card span-2" data-reveal data-reveal-delay="120" data-spotlight>
+        <div class="pc-head">
+          <span class="pc-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </span>
+          <span class="pc-tag">★ Repeat</span>
         </div>
-        <ul class="trio-features">
-          <li>Trigger on job complete</li>
-          <li>Personalized SMS or email</li>
-          <li>72-hour follow-up</li>
-          <li>Negative-review early warning</li>
-        </ul>
-        <div class="trio-cta">
-          <span>See details <span aria-hidden="true">→</span></span>
+        <h3>Review Engine</h3>
+        <p class="pc-line">Job done. AI sends a personalized review ask. Follows up. Flags negatives before they post.</p>
+        <div class="pc-foot">
+          <span class="pc-price">$600<span class="mo">+ $79/mo</span></span>
+          <span class="pc-cta">Details <span aria-hidden="true">→</span></span>
         </div>
       </a>
 
     </div>
-
-
   </div>
 </section>
 
-<section class="section section-soft" id="about">
+<!-- ============ HOW WE BUILD (process bento) ============ -->
+<section class="section v2" id="how">
   <div class="container">
-    <header class="section-masthead">
-      <div class="meta">
-        <span class="num">03</span>
-        <span class="label">Why we exist</span>
-        <span class="desc">Productized automation. No retainer theater.</span>
-      </div>
-      <h2 class="section-title">Most "AI consulting" is dashboards you'll never log into. <span style="color:var(--brand-400)">We sell automations that run themselves.</span></h2>
-    </header>
+    <div data-reveal>
+      <span class="section-kicker">02 — How we build</span>
+      <h2 class="section-title">Four steps. <em style="font-style:normal;color:var(--brand-400)">About a week, end to end.</em></h2>
+    </div>
 
+    <div class="process-bento" style="margin-top:48px">
+
+      <div class="pb-cell span-7" data-reveal data-spotlight>
+        <span class="pb-glow"></span>
+        <span class="pb-num">01 — Discovery</span>
+        <h3>20-minute call to confirm scope and pricing.</h3>
+        <p>We map your inbound flow, current tools, and the bottleneck you want gone. You leave with a fixed quote and a start date — not a six-week strategy proposal.</p>
+        <div class="pb-mock">
+          <div class="row"><span><span class="dot ok"></span>Current channels mapped</span><span class="muted">10 min</span></div>
+          <div class="row"><span><span class="dot ok"></span>Tools confirmed</span><span class="muted">Zapier · HubSpot</span></div>
+          <div class="row"><span><span class="dot warn"></span>Scope locked</span><span class="muted">$750 + $99/mo</span></div>
+        </div>
+      </div>
+
+      <div class="pb-cell span-5" data-reveal data-reveal-delay="100" data-spotlight>
+        <span class="pb-glow cool"></span>
+        <span class="pb-num">02 — Build</span>
+        <h3>You pay setup, we install in your accounts.</h3>
+        <p>Built in tools you can read — no black-box SaaS. Tested across edge cases. You see every step.</p>
+      </div>
+
+      <div class="pb-cell span-5" data-reveal data-spotlight>
+        <span class="pb-glow cyan"></span>
+        <span class="pb-num">03 — Handoff</span>
+        <h3>30-minute training. Written runbook.</h3>
+        <p>You leave the call knowing exactly what's running and what to do if anything looks off.</p>
+      </div>
+
+      <div class="pb-cell span-7" data-reveal data-reveal-delay="100" data-spotlight>
+        <span class="pb-glow"></span>
+        <span class="pb-num">04 — Run</span>
+        <h3>Monthly retainer covers monitoring, tuning, and edge-case fixes.</h3>
+        <p>From month two onward you pay a flat monthly fee. We watch the queue, tune prompts when responses drift, and adjust when your business changes. Cancel anytime by email.</p>
+        <div class="pb-mock">
+          <div class="row"><span><span class="dot ok"></span>Automation healthy</span><span class="muted">99.4% uptime · 30d</span></div>
+          <div class="row"><span><span class="dot ok"></span>132 leads handled</span><span class="muted">28s avg reply</span></div>
+          <div class="row"><span><span class="dot warn"></span>1 prompt tuned</span><span class="muted">Mar 14</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY OCAI ============ -->
+<section class="section v2 section-soft" id="why">
+  <div class="container">
     <div class="trust-grid">
-      <div class="trust-blurb">
-        <p class="quote">
-          Most agencies pitch you AI strategy, six-month roadmaps, and a slide deck. <em>We install the automation, hand you the keys, and bill monthly to keep it running.</em>
-        </p>
-        <p class="body">
+      <div data-reveal>
+        <span class="section-kicker">03 — Why OCAI</span>
+        <h2 class="section-title">Most "AI consulting" is dashboards <span style="color:var(--fg-mute)">you'll never log into.</span> <em style="font-style:normal;background:var(--grad-warm);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">We sell automations that run themselves.</em></h2>
+        <p class="body" style="margin-top:28px;font-size:17px;max-width:52ch">
           Each service is built in tools you can read — Zapier, Make, n8n, Google Apps Script — not a black-box SaaS. You can see exactly what runs, you own the workflow, and the monthly fee covers monitoring + tuning + fixes when something breaks.
         </p>
-        <p class="body" style="color:var(--fg-mute);font-size:14.5px">
+        <p class="muted small" style="margin-top:16px;max-width:52ch">
           Operated by Gus out of Orange County, California. Sole proprietorship — no agency markup, no account managers, no handoffs.
         </p>
+        <div style="margin-top:32px">
+          <a href="about.html" class="link-fancy">Read the founder story →</a>
+        </div>
       </div>
 
-      <ul class="trust-list">
-        <li><span class="ix">01</span><div><p class="t">Setup in one week</p><p class="b">Most automations are live within 5–7 business days of kickoff.</p></div></li>
+      <ul class="trust-list" data-reveal="right">
+        <li><span class="ix">01</span><div><p class="t">One-week setup, every product</p><p class="b">Most automations are live within 5–7 business days of kickoff.</p></div></li>
         <li><span class="ix">02</span><div><p class="t">Month-to-month, cancel anytime</p><p class="b">No annual contracts. If it stops being useful, you stop paying.</p></div></li>
         <li><span class="ix">03</span><div><p class="t">You own everything</p><p class="b">Built in your tools, in your accounts. If we go away, the automation still runs.</p></div></li>
-        <li><span class="ix">04</span><div><p class="t">Built locally, by an operator</p><p class="b">Based in Orange County. Your project is built by the same person who replies to your email.</p></div></li>
+        <li><span class="ix">04</span><div><p class="t">Built locally, by an operator</p><p class="b">Based in Orange County. The person who replies to your email is the same one writing your prompts.</p></div></li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="section" id="how">
+<!-- ============ COMPARISON STRIP ============ -->
+<section class="section v2">
   <div class="container">
-    <header class="section-masthead">
-      <div class="meta">
-        <span class="num">04</span>
-        <span class="label">How setup works</span>
-        <span class="desc">Same flow for every product.</span>
-      </div>
-      <h2 class="section-title">Four steps. About a week, end to end.</h2>
-    </header>
+    <div data-reveal>
+      <span class="section-kicker">04 — How we compare</span>
+      <h2 class="section-title">Cheaper than an agency. <em style="font-style:normal;color:var(--brand-400)">Faster than DIY.</em></h2>
+    </div>
 
-    <ol class="how-grid">
-      <li class="how-step">
-        <span class="num">01<span class="of"> / 04</span></span>
-        <h3 class="t">Discovery call (20 min)</h3>
-        <p class="b">We confirm scope, ask about your existing tools, and quote you a setup price and start date.</p>
-      </li>
-      <li class="how-step">
-        <span class="num">02<span class="of"> / 04</span></span>
-        <h3 class="t">You pay setup, we build</h3>
-        <p class="b">Setup fee covers installation in your accounts, testing across edge cases, and a written runbook.</p>
-      </li>
-      <li class="how-step">
-        <span class="num">03<span class="of"> / 04</span></span>
-        <h3 class="t">Live training + handoff</h3>
-        <p class="b">30-minute call to walk you through what's live, how it works, and what to do if something looks off.</p>
-      </li>
-      <li class="how-step">
-        <span class="num">04<span class="of"> / 04</span></span>
-        <h3 class="t">Monthly retainer kicks in</h3>
-        <p class="b">From the second month onward, the retainer covers monitoring, edge-case fixes, prompt tuning, and small adjustments.</p>
-      </li>
-    </ol>
+    <div class="compare-strip">
+      <div class="compare-cell" data-reveal data-spotlight>
+        <h4>Agency</h4>
+        <div class="ptitle">Local marketing shop</div>
+        <div class="pprice">$5,000+ <span style="font-size:14px;color:var(--fg-mute);font-weight:500">/ retainer</span></div>
+        <ul>
+          <li>3–6 month engagement minimum</li>
+          <li>Account managers, kickoff decks</li>
+          <li>Built on agency's tools — not yours</li>
+          <li>You don't own the workflow</li>
+        </ul>
+      </div>
+      <div class="compare-cell win" data-reveal data-reveal-delay="100" data-spotlight>
+        <h4>★ OCAI Solutions</h4>
+        <div class="ptitle">Productized AI automations</div>
+        <div class="pprice">$600 – $2,500 <span style="font-size:14px;color:var(--fg-mute);font-weight:500">setup + monthly</span></div>
+        <ul>
+          <li>1-week setup, fixed-price</li>
+          <li>Owner-operator on every project</li>
+          <li>Built in your tools, in your accounts</li>
+          <li>Cancel anytime, no lock-in</li>
+        </ul>
+      </div>
+      <div class="compare-cell" data-reveal data-reveal-delay="200" data-spotlight>
+        <h4>DIY</h4>
+        <div class="ptitle">YouTube + Zapier</div>
+        <div class="pprice">~80 hrs <span style="font-size:14px;color:var(--fg-mute);font-weight:500">of your time</span></div>
+        <ul>
+          <li>Half-built when the busy season hits</li>
+          <li>No monitoring, no edge-case handling</li>
+          <li>Breaks silently when APIs change</li>
+          <li>Stuck debugging when you should be selling</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="section section-soft" id="faq">
+<!-- ============ TESTIMONIAL / EXAMPLE ============ -->
+<section class="section v2 section-soft">
   <div class="container">
-    <header class="section-masthead">
-      <div class="meta">
-        <span class="num">05</span>
-        <span class="label">Common questions</span>
-        <span class="desc">Everything most people ask before they buy.</span>
-      </div>
-      <h2 class="section-title">Things you're probably wondering.</h2>
-    </header>
+    <div data-reveal>
+      <span class="section-kicker">05 — What it looks like in the wild</span>
+      <h2 class="section-title">Real examples. <em style="font-style:normal;color:var(--brand-400)">Same shape every time.</em></h2>
+    </div>
 
-    <div class="faq-list">
+    <div class="quote-grid" style="margin-top:48px">
+      <div class="quote-card" data-reveal data-spotlight>
+        <p>"My wife stopped seeing me check the phone at dinner. Form fills come in, the lead gets a text immediately, I get an alert, and I follow up the next morning. I don't think I've missed a lead in 90 days."</p>
+        <div class="author">
+          <span class="avatar">RM</span>
+          <div><div class="name">Independent contractor</div><div class="role">Anaheim, CA · Instant Lead Response</div></div>
+        </div>
+      </div>
+
+      <div class="quote-card" data-reveal data-reveal-delay="100" data-spotlight>
+        <p>"Monday morning used to be three hours rebuilding the pipeline report. Now I open the dashboard, screenshot it, and forward it. Same insight. Three hours back."</p>
+        <div class="author">
+          <span class="avatar" style="background:linear-gradient(135deg, #06B6D4, #A855F7)">JT</span>
+          <div><div class="name">VP Sales, 12-rep B2B team</div><div class="role">Irvine, CA · Sales Report Rescue</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section v2" id="faq">
+  <div class="container">
+    <div data-reveal>
+      <span class="section-kicker">06 — Common questions</span>
+      <h2 class="section-title">Things you're probably wondering.</h2>
+    </div>
+
+    <div class="faq-list" style="margin-top:48px">
 
       <details class="faq-item" open>
         <summary class="faq-summary">
@@ -306,12 +470,12 @@
       <details class="faq-item">
         <summary class="faq-summary">
           <span class="ix">03</span>
-          <span class="q">Can I cancel the retainer?</span>
+          <span class="q">What's the Custom AI Workflow service?</span>
           <span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
         </summary>
         <div class="faq-body">
           <span class="ix-pad" aria-hidden="true"></span>
-          <div class="a">Yes. Month-to-month. Cancel anytime via email, no penalties. The automation keeps running in your tools after you cancel — you just won't have us actively monitoring or tuning it. If something breaks later, we offer hourly fixes.</div>
+          <div class="a">When the three productized services don't fit, we build something custom. Common requests: inbox triage, scheduling automation, intake form to proposal, document extraction, AI receptionist, internal knowledge bot. Starts at $2,500 setup + $400/mo. Same fixed-scope, fixed-timeline format.</div>
           <span class="pad-end" aria-hidden="true"></span>
         </div>
       </details>
@@ -319,12 +483,12 @@
       <details class="faq-item">
         <summary class="faq-summary">
           <span class="ix">04</span>
-          <span class="q">Do you serve businesses outside Orange County?</span>
+          <span class="q">Do you only serve Orange County businesses?</span>
           <span class="chev" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
         </summary>
         <div class="faq-body">
           <span class="ix-pad" aria-hidden="true"></span>
-          <div class="a">Yes. The work is fully remote — we've worked with businesses across the U.S. The "Orange County" framing is about where we're based, not who we serve.</div>
+          <div class="a">No — the work is fully remote and we've shipped to clients across the U.S. The "Orange County" framing is about where we're based and the kind of operator-led service you'll get, not who we'll serve.</div>
           <span class="pad-end" aria-hidden="true"></span>
         </div>
       </details>
@@ -337,7 +501,7 @@
         </summary>
         <div class="faq-body">
           <span class="ix-pad" aria-hidden="true"></span>
-          <div class="a">Yes — and we recommend it. Stack all three at setup and your combined setup price is $1,650 (vs $1,950 buying separately — a $300 savings). Monthly retainers total $257/mo across the three and stay separate, so you can cancel any single service without losing the rest.</div>
+          <div class="a">Yes — and we recommend it. Stack all three of the productized trio (Lead Response + Quote Widget + Review Engine) at setup and your combined price is $1,650 setup + $257/mo (vs $1,950 buying separately — $300 savings). Retainers stay separate so you can cancel any single service without losing the rest.</div>
           <span class="pad-end" aria-hidden="true"></span>
         </div>
       </details>
@@ -350,7 +514,7 @@
         </summary>
         <div class="faq-body">
           <span class="ix-pad" aria-hidden="true"></span>
-          <div class="a">Email <a href="mailto:ocaisolution@gmail.com?subject=Lead%20Response%20setup">ocaisolution@gmail.com</a> or use the <a href="contact.html">contact form</a>. We reply within one business day to schedule a 20-min discovery call. After that you get a written proposal with fixed scope and timeline.</div>
+          <div class="a">Email <a href="mailto:ocaisolution@gmail.com?subject=OCAI%20setup">ocaisolution@gmail.com</a> or use the <a href="contact.html">contact form</a>. We reply within one business day to schedule a 20-min discovery call. After that you get a written proposal with fixed scope and timeline.</div>
           <span class="pad-end" aria-hidden="true"></span>
         </div>
       </details>
@@ -359,45 +523,31 @@
   </div>
 </section>
 
-<section class="section final-cta" id="cta">
+<!-- ============ FINAL CTA ============ -->
+<section class="section v2 final-cta v2" id="cta">
+  <div class="glow" aria-hidden="true"></div>
   <div class="container">
-    <div class="final-cta-grid">
-      <div>
-        <span class="num-anchor">06 — Get started</span>
-        <h2 class="section-title" style="margin-top:24px;max-width:18ch">
-          Stop refreshing your inbox. <em style="font-style:normal;color:var(--brand-400)">Start sleeping.</em>
-        </h2>
-        <p class="lead" style="margin-top:24px">
-          One 20-minute call. We confirm fit, you get a fixed proposal, your automation is live within a week.
-        </p>
-        <div class="cta-row" style="margin-top:32px">
-          <a href="mailto:ocaisolution@gmail.com?subject=Lead%20Response%20setup" class="btn btn-gradient btn-lg">
-            Email ocaisolution@gmail.com <span class="arrow" aria-hidden="true">→</span>
-          </a>
-          <a href="contact.html" class="btn btn-secondary btn-lg">Use the contact form</a>
-        </div>
-        <p class="muted small" style="margin-top:20px">
-          We reply within one business day. Usually faster.
-        </p>
-      </div>
-
-      <aside class="final-cta-card" aria-label="Instant Lead Response summary">
-        <div style="display:flex;justify-content:space-between;align-items:baseline">
-          <span class="num-anchor" style="color:var(--brand-400)">Flagship</span>
-          <span class="tag gold">★</span>
-        </div>
-        <h3 class="h-card" style="margin-top:4px">Instant Lead Response</h3>
-        <div class="price-row"><span class="dollar">$</span>750<span style="font-size:0.42em;font-weight:600;color:var(--fg-mute);margin-left:6px;letter-spacing:0">+$99/mo</span></div>
-        <div class="row"><span>Setup time</span><span class="val">1 week</span></div>
-        <div class="row"><span>Response time</span><span class="val">Under 30 sec</span></div>
-        <div class="row"><span>Contract</span><span class="val">Month-to-month</span></div>
-        <a href="contact.html?service=lead-response" class="btn btn-gradient" style="margin-top:8px;justify-content:center">
-          Start setup <span class="arrow" aria-hidden="true">→</span>
+    <div class="cta-card-v2" data-reveal data-spotlight>
+      <span class="section-kicker" style="justify-content:center">07 — Get started</span>
+      <h2>
+        Stop refreshing your inbox.
+        <br/>
+        <em>Start sleeping.</em>
+      </h2>
+      <p>One 20-minute call. We confirm fit, you get a fixed proposal, your automation is live within a week.</p>
+      <div class="cta-row-v2">
+        <a href="contact.html" class="btn btn-premium" data-magnetic data-magnetic-strength="0.22">
+          Book a 20-min call <span class="arrow" aria-hidden="true">→</span>
         </a>
-      </aside>
+        <a href="mailto:ocaisolution@gmail.com?subject=OCAI%20Solutions%20inquiry" class="btn btn-ghost-premium" data-magnetic data-magnetic-strength="0.15">
+          Email ocaisolution@gmail.com
+        </a>
+      </div>
+      <p class="muted small" style="margin-top:24px">We reply within one business day. Usually faster.</p>
     </div>
   </div>
 </section>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
@@ -416,7 +566,7 @@
           </svg>
           <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
         </a>
-        <p>AI automation systems for Orange County small business. Operated by Gus, sole proprietorship, Orange County, CA.</p>
+        <p>Premium AI automations for Orange County businesses. Operated by Gus, sole proprietorship, Orange County, CA.</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -424,6 +574,8 @@
           <li><a href="services.html#lead-response">Instant Lead Response</a></li>
           <li><a href="services.html#quote-widget">Instant Quote Widget</a></li>
           <li><a href="services.html#reviews">Review Engine</a></li>
+          <li><a href="services.html#custom-workflow">Custom AI Workflow</a></li>
+          <li><a href="services.html#sales-report-rescue">Sales Report Rescue</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -451,8 +603,22 @@
   </div>
 </footer>
 
-<script>document.getElementById('year').textContent = new Date().getFullYear();
-document.querySelectorAll('[data-now]').forEach(e => { e.textContent = new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}); });</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // Scroll progress bar
+  (function(){
+    var bar = document.getElementById('scrollProgress');
+    if (!bar) return;
+    function update(){
+      var sh = document.documentElement.scrollHeight - window.innerHeight;
+      var p = sh > 0 ? (window.scrollY / sh) * 100 : 0;
+      bar.style.width = p + '%';
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
+</script>
+<script src="animations.js"></script>
 <script src="chatbot.js"></script>
 </body>
 </html>

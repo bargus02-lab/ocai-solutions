@@ -36,12 +36,15 @@
       </svg>
       <span class="word"><span class="bold">OCAI</span> <span class="soft">Solutions</span></span>
     </a>
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" data-nav aria-label="Primary">
       <a href="services.html" class="nav-link">Services</a>
       <a href="about.html" class="nav-link">About</a>
       <a href="contact.html" class="nav-link">Contact</a>
-      <a href="contact.html" class="btn btn-gradient btn-sm nav-cta">Get Started <span class="arrow" aria-hidden="true">→</span></a>
+      <a href="contact.html" class="btn btn-gradient btn-sm nav-cta" data-magnetic data-magnetic-strength="0.18">Get Started <span class="arrow" aria-hidden="true">→</span></a>
     </nav>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
   </div>
 </header>
 
@@ -89,6 +92,8 @@
             <option value="quote-widget">Instant Quote Widget ($600 setup + $79/mo)</option>
             <option value="reviews">Review Engine ($600 setup + $79/mo)</option>
             <option value="bundle">Bundle the trio ($1,650 setup + $257/mo — save $300)</option>
+            <option value="custom">Custom AI Workflow Build (from $2,500 + $400/mo)</option>
+            <option value="sales-report-rescue">Sales Report Rescue ($1,250 + $400/mo)</option>
             <option value="general">General question</option>
           </select>
         </label>
@@ -184,7 +189,8 @@
           <li><a href="services.html#lead-response">Instant Lead Response</a></li>
           <li><a href="services.html#quote-widget">Instant Quote Widget</a></li>
           <li><a href="services.html#reviews">Review Engine</a></li>
-          <li><a href="sample-audit.html">Sample audit</a></li>
+          <li><a href="services.html#custom-workflow">Custom AI Workflow</a></li>
+          <li><a href="services.html#sales-report-rescue">Sales Report Rescue</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -213,6 +219,7 @@
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="animations.js"></script>
 <script src="chatbot.js"></script>
 </body>
 </html>
