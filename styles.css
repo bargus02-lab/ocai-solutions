@@ -1547,27 +1547,47 @@ html, body { scrollbar-gutter: stable; }
    ★ PREMIUM v2 — motion, aurora, kinetic primitives
    ============================================================ */
 
-/* Extended palette additions (premium accents) */
+/* Extended palette additions — warm OC sunset, premium hospitality vibe */
 :root {
-  --accent-violet: #A855F7;
-  --accent-cyan:   #06B6D4;
-  --accent-ink:    #050813;
-  --grad-warm:  linear-gradient(135deg, #F59E0B 0%, #F97316 55%, #FBBF24 100%);
-  --grad-cool:  linear-gradient(135deg, #A855F7 0%, #06B6D4 100%);
-  --grad-mix:   linear-gradient(135deg, #F59E0B 0%, #F97316 35%, #A855F7 75%, #06B6D4 100%);
-  --noise-opacity: 0.04;
+  /* Approachable warm dark — like a sunset bar at golden hour, not a SaaS dashboard */
+  --accent-ink:    #120A06;   /* warm cocoa-night (was cold #050813) */
+  --accent-cream:  #FFF8EE;   /* used as light accent text where needed */
+  --accent-coral:  #FB923C;   /* warm coral mid-tone */
+  --accent-rose:   #F87171;   /* soft rose for hospitality warmth */
+  --accent-gold:   #FCD34D;   /* highlight gold */
+  --grad-warm:  linear-gradient(135deg, #B45309 0%, #F59E0B 45%, #FCD34D 100%);
+  --grad-sunset:linear-gradient(135deg, #B45309 0%, #F97316 40%, #FB923C 70%, #FCD34D 100%);
+  --grad-mix:   linear-gradient(135deg, #B45309 0%, #F59E0B 35%, #FB923C 70%, #FCD34D 100%);
+  --grad-cool:  linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%); /* alias kept; now warm */
+  --noise-opacity: 0.035;
+}
+
+/* Override the original palette tokens to warm everything else automatically */
+:root {
+  --ink:        #120A06;
+  --panel:      #1E140A;    /* warm cocoa panel */
+  --panel-soft: rgba(30,20,10,0.55);
+  --line:       #2B1E10;
+  --line-soft:  rgba(43,30,16,0.6);
+
+  --brand-cyan: #FB923C;    /* re-used token: now coral, not cold orange-rust */
+  --fg-1: #FBF6EE;          /* warm white */
+  --fg-2: #E8DECC;
+  --fg-3: #C8BCA6;
+  --fg-mute: #998871;
+  --fg-faint: #6E5E47;
 }
 
 html { background: var(--accent-ink); }
 body { background: var(--accent-ink); }
 
-/* Body-wide subtle noise/grain overlay */
+/* Body-wide subtle warm-on-warm radial overlay (no cold accents) */
 body::before {
   content: "";
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
   background-image:
-    radial-gradient(circle at 15% 12%, rgba(168,85,247,0.07), transparent 45%),
-    radial-gradient(circle at 88% 8%, rgba(6,182,212,0.05), transparent 45%);
+    radial-gradient(circle at 15% 12%, rgba(245,158,11,0.06), transparent 50%),
+    radial-gradient(circle at 88% 8%, rgba(251,146,60,0.04), transparent 50%);
   z-index: 1;
 }
 body::after {
@@ -1668,8 +1688,8 @@ body > * { position: relative; z-index: 2; }
   gap: 12px;
   padding: 8px 14px 8px 10px;
   border-radius: 999px;
-  background: linear-gradient(135deg, rgba(245,158,11,0.10), rgba(168,85,247,0.06));
-  border: 1px solid rgba(251,191,36,0.28);
+  background: linear-gradient(135deg, rgba(245,158,11,0.12), rgba(252,211,77,0.06));
+  border: 1px solid rgba(251,191,36,0.32);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.10em;
@@ -1911,8 +1931,8 @@ body > * { position: relative; z-index: 2; }
   width: 44px; height: 44px;
   border-radius: 12px;
   display: inline-flex; align-items: center; justify-content: center;
-  background: linear-gradient(135deg, rgba(245,158,11,0.18), rgba(168,85,247,0.10));
-  border: 1px solid rgba(251,191,36,0.25);
+  background: linear-gradient(135deg, rgba(245,158,11,0.22), rgba(252,211,77,0.10));
+  border: 1px solid rgba(251,191,36,0.30);
   color: var(--brand-gold);
 }
 .product-card h3 {
@@ -2039,10 +2059,10 @@ body > * { position: relative; z-index: 2; }
   opacity: 0.8;
 }
 .process-bento .pb-glow.cool {
-  background: radial-gradient(circle at 0% 100%, rgba(168,85,247,0.18), transparent 55%);
+  background: radial-gradient(circle at 0% 100%, rgba(251,146,60,0.18), transparent 55%);
 }
 .process-bento .pb-glow.cyan {
-  background: radial-gradient(circle at 100% 100%, rgba(6,182,212,0.14), transparent 55%);
+  background: radial-gradient(circle at 100% 100%, rgba(252,211,77,0.16), transparent 55%);
 }
 .process-bento .pb-mock {
   margin-top: 18px;
@@ -2181,9 +2201,9 @@ body > * { position: relative; z-index: 2; }
 }
 .quote-card .author .avatar {
   width: 38px; height: 38px; border-radius: 999px;
-  background: linear-gradient(135deg, var(--brand-500), var(--accent-violet));
+  background: linear-gradient(135deg, #B45309, #F59E0B 60%, #FCD34D);
   display: inline-flex; align-items: center; justify-content: center;
-  font-weight: 800; color: white; font-size: 14px;
+  font-weight: 800; color: #1A0E00; font-size: 14px;
 }
 .quote-card .author .name { font-weight: 700; font-size: 14px; }
 .quote-card .author .role { color: var(--fg-mute); font-size: 13px; }
@@ -2196,8 +2216,8 @@ body > * { position: relative; z-index: 2; }
 .final-cta.v2 .glow {
   position: absolute; inset: 0; pointer-events: none;
   background:
-    radial-gradient(ellipse 60% 80% at 50% 100%, rgba(245,158,11,0.25), transparent 60%),
-    radial-gradient(ellipse 60% 60% at 90% 0%, rgba(168,85,247,0.15), transparent 60%);
+    radial-gradient(ellipse 60% 80% at 50% 100%, rgba(245,158,11,0.28), transparent 60%),
+    radial-gradient(ellipse 60% 60% at 90% 0%, rgba(251,146,60,0.18), transparent 60%);
 }
 .final-cta.v2 .container { position: relative; z-index: 1; }
 .cta-card-v2 {
